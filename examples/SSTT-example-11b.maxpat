@@ -14,6 +14,18 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 219.0, 632.0, 55.0, 22.0 ],
+					"text" : "1 3 2 4 5"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -845,7 +857,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 730.0, 163.0, 295.0, 167.0 ],
+					"patching_rect" : [ 730.0, 163.0, 299.0, 167.0 ],
 					"text" : "\n\n\nThis is a technique you can use for a mc signals to ambisonic as long as your mc no.of channel correponds to the t-format and ambisonic order:\nThe t-format expetcs 4, 12 ,24, 36, 49, 64, 81,100 and 144 for ambisonic order 1 2 3 4 5 6 7 8 9\n\nHere in this example is wild FM synth with mc objects in which the spatialising is a consecvense of the parametric changes"
 				}
 
@@ -1041,6 +1053,13 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
 			"obj-11" : [ "live.dial[3]", "live.dial", 0 ],
@@ -1075,6 +1094,16 @@
 			"obj-3::obj-57" : [ "live.text[15]", "live.text[9]", 0 ],
 			"obj-3::obj-79" : [ "ShowCh[14]", "showCh", 0 ],
 			"obj-5" : [ "live.dial", "live.dial", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
 			"parameter_overrides" : 			{
 				"obj-13::obj-67" : 				{
 					"parameter_longname" : "live.menu[39]"
@@ -1087,42 +1116,42 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "HOA-RingFx.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/abstractions",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/abstractions",
 				"patcherrelativepath" : "../abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-Decoder-Output.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/modules",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-ReEncoder.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/modules",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-RingMod.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/modules",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-encode.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/modules",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "reencode_builder.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -1134,7 +1163,7 @@
 , 			{
 				"name" : "spat5.gui.control.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../Max 9/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1157,7 +1186,7 @@
 , 			{
 				"name" : "spat5.known.speakersetups.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../Max 9/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1195,14 +1224,14 @@
 			}
 , 			{
 				"name" : "spat_decode_manager.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sptt-hoa-encodeMain.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1

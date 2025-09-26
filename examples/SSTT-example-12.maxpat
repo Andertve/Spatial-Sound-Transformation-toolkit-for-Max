@@ -14,6 +14,18 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 208.0, 632.0, 55.0, 22.0 ],
+					"text" : "1 3 2 4 5"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -54,7 +66,7 @@
 					"clipheight" : 20.0,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "/Users/anderstveit/Documents/Samples_fra_mac/earthworks/EspressoHelling.wav",
+								"absolutepath" : "EspressoHelling.wav",
 								"filename" : "EspressoHelling.wav",
 								"filekind" : "audiofile",
 								"id" : "u730010820",
@@ -65,7 +77,7 @@
 
 							}
 , 							{
-								"absolutepath" : "/Users/anderstveit/Downloads/drive-download-20240903T093312Z-010/Bass.Sax.AirWorks/Bari multi M8 pitched (1)/Bari multi M8 pitched_01 (1).wav",
+								"absolutepath" : "Bari multi M8 pitched_01 (1).wav",
 								"filename" : "Bari multi M8 pitched_01 (1).wav",
 								"filekind" : "audiofile",
 								"id" : "u075002603",
@@ -180,7 +192,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 563.0, 76.0, 293.0, 127.0 ],
+					"patching_rect" : [ 563.0, 76.0, 296.0, 127.0 ],
 					"text" : "Basically a Spat-granular + t-design encoder, accepts either an ambisonic input or a mono input (extract the W channel from the ambisonic input) the output is a full sphere ambisonic signal where the grains have been mapped around a virtual sphere, \n\nand finally mixing between the granulated ambisonic signal and the dry ambisonic signal\n"
 				}
 
@@ -279,7 +291,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -287,8 +299,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -345,72 +364,62 @@
 			"obj-3::obj-3" : [ "ambiorder", "ambiorder", 0 ],
 			"obj-3::obj-57" : [ "live.text[15]", "live.text[9]", 0 ],
 			"obj-3::obj-79" : [ "ShowCh[14]", "showCh", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
 			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "Bari multi M8 pitched_01 (1).wav",
-				"bootpath" : "~/Downloads/drive-download-20240903T093312Z-010/Bass.Sax.AirWorks/Bari multi M8 pitched (1)",
-				"patcherrelativepath" : "../../Downloads/drive-download-20240903T093312Z-010/Bass.Sax.AirWorks/Bari multi M8 pitched (1)",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "EspressoHelling.wav",
-				"bootpath" : "~/Documents/Samples_fra_mac/earthworks",
-				"patcherrelativepath" : "../Samples_fra_mac/earthworks",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-Decoder-Output.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
+				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-Gran.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
+				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-Mixer.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
+				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-encode.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
+				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "grain-setup.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/javascript",
-				"patcherrelativepath" : "./javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mcDryWet-mix.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/abstractions",
-				"patcherrelativepath" : "./abstractions",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/abstractions",
+				"patcherrelativepath" : "../abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -425,7 +434,7 @@
 , 			{
 				"name" : "spat5.gui.control.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/spat5/patchers",
-				"patcherrelativepath" : "../Max 9/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -448,7 +457,7 @@
 , 			{
 				"name" : "spat5.known.speakersetups.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/spat5/patchers",
-				"patcherrelativepath" : "../Max 9/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -490,15 +499,15 @@
 			}
 , 			{
 				"name" : "spat_decode_manager.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/javascript",
-				"patcherrelativepath" : "./javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sptt-hoa-encodeMain.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/javascript",
-				"patcherrelativepath" : "./javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 8,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -14,6 +14,18 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 71.0, 603.0, 55.0, 22.0 ],
+					"text" : "1 3 2 4 5"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bubble" : 1,
 					"bubble_bgcolor" : [ 0.733333333333333, 0.831372549019608, 0.694117647058824, 1.0 ],
 					"bubbleside" : 2,
@@ -22,7 +34,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 19.0, 378.0, 201.0, 39.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Binaural or loudspeaker decoding"
 				}
 
@@ -37,7 +48,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 558.0, 389.0, 169.0, 39.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Headphone EQ for binaural"
 				}
 
@@ -131,7 +141,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 303.0, 108.0, 234.0, 104.0 ],
+					"patching_rect" : [ 303.0, 108.0, 235.0, 104.0 ],
 					"text" : "Define the ambisonic order by entering number, and all the modules you use from this toolkit are dynamically changed to reflect the order and channel count. This information is displayed in the two small number boxes located in the lower‑right corner."
 				}
 
@@ -307,13 +317,20 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
 			"obj-19::obj-20" : [ "ShowCh[13]", "showCh", 0 ],
-			"obj-19::obj-3" : [ "live.numbox[20]", "live.numbox[8]", 0 ],
+			"obj-19::obj-3" : [ "live.numbox[20]", "ambiorder", 0 ],
 			"obj-19::obj-57" : [ "live.text[15]", "live.text[9]", 0 ],
 			"obj-19::obj-79" : [ "ShowCh[14]", "showCh", 0 ],
-			"obj-1::obj-10" : [ "live.dial", "Crosseover", 0 ],
+			"obj-1::obj-10" : [ "live.dial", "Crossover", 0 ],
 			"obj-1::obj-103::obj-21" : [ "live.menu", "live.menu", 0 ],
 			"obj-1::obj-12" : [ "live.menu[8]", "live.menu[2]", 0 ],
 			"obj-1::obj-14" : [ "mc.live.gain~[2]", "loudspeakers", 0 ],
@@ -332,18 +349,25 @@
 			"obj-1::obj-58" : [ "live.text[13]", "live.text[9]", 0 ],
 			"obj-1::obj-7" : [ "live.menu[5]", "live.menu[1]", 0 ],
 			"obj-1::obj-79" : [ "ShowCh[2]", "showCh", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
 			"parameter_overrides" : 			{
+				"obj-19::obj-3" : 				{
+					"parameter_longname" : "live.numbox[20]"
+				}
+,
 				"obj-19::obj-57" : 				{
 					"parameter_longname" : "live.text[15]"
+				}
+,
+				"obj-1::obj-10" : 				{
+					"parameter_longname" : "live.dial"
+				}
+,
+				"obj-1::obj-103::obj-21" : 				{
+					"parameter_longname" : "live.menu"
+				}
+,
+				"obj-1::obj-31" : 				{
+					"parameter_longname" : "mc.live.gain~[9]"
 				}
 
 			}
@@ -353,29 +377,29 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "SSTT-Decoder-Output.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
+				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-encode.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
+				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hobbyvev.wav",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spat5.gui.control.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/spat5/patchers",
-				"patcherrelativepath" : "../Max 9/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -398,7 +422,7 @@
 , 			{
 				"name" : "spat5.known.speakersetups.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/spat5/patchers",
-				"patcherrelativepath" : "../Max 9/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -420,15 +444,15 @@
 			}
 , 			{
 				"name" : "spat_decode_manager.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sptt-hoa-encodeMain.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 8,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -13,6 +13,18 @@
 		"rect" : [ 59.0, 106.0, 1315.0, 700.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 134.0, 751.0, 55.0, 22.0 ],
+					"text" : "1 3 2 4 5"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
@@ -351,7 +363,23 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
+					"order" : 1,
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"order" : 0,
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -506,7 +534,8 @@
 				"0" : 				{
 					"index" : 0,
 					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
 				}
 
 			}
@@ -534,6 +563,10 @@
 ,
 				"obj-1::obj-10" : 				{
 					"parameter_longname" : "live.dial"
+				}
+,
+				"obj-1::obj-103::obj-21" : 				{
+					"parameter_longname" : "live.menu"
 				}
 ,
 				"obj-1::obj-31" : 				{
@@ -675,113 +708,113 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "SPTT-Ambi-Splitter-Combiner.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/javascript",
-				"patcherrelativepath" : "./javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SPTT_RouterManager.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/javascript",
-				"patcherrelativepath" : "./javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-AmbiCombiner.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
+				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-AmbiSplitter.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
+				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-Decoder-Output.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
+				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-Delay.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
+				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-Mixer.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
+				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-Rotation.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
+				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-encode.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
+				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-record.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
+				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-warp.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
+				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hobbyvev.wav",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/media",
-				"patcherrelativepath" : "./media",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mcDryWet-mix.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/abstractions",
-				"patcherrelativepath" : "./abstractions",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/abstractions",
+				"patcherrelativepath" : "../abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "record-setup.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/javascript",
-				"patcherrelativepath" : "./javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spat5.around.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/SpektraFon-versjon-0.8/patchers",
-				"patcherrelativepath" : "../Max 8/Projects/SpektraFon-versjon-0.8/patchers",
+				"bootpath" : "~/Documents/Max 9/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spat5.gui.control.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/spat5/patchers",
-				"patcherrelativepath" : "../Max 9/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -812,7 +845,7 @@
 , 			{
 				"name" : "spat5.known.speakersetups.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/spat5/patchers",
-				"patcherrelativepath" : "../Max 9/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -823,7 +856,7 @@
 , 			{
 				"name" : "spat5.rec.svg",
 				"bootpath" : "~/Documents/Max 9/Packages/spat5/media/images",
-				"patcherrelativepath" : "../Max 9/Packages/spat5/media/images",
+				"patcherrelativepath" : "../../spat5/media/images",
 				"type" : "svg",
 				"implicit" : 1
 			}
@@ -845,29 +878,29 @@
 			}
 , 			{
 				"name" : "spat_decode_manager.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/javascript",
-				"patcherrelativepath" : "./javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spdelayHOA.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/abstractions",
-				"patcherrelativepath" : "./abstractions",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/abstractions",
+				"patcherrelativepath" : "../abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sptt-hoa-encodeMain.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/javascript",
-				"patcherrelativepath" : "./javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sptt-hoa-rotate.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/javascript",
-				"patcherrelativepath" : "./javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -879,8 +912,8 @@
 			}
 , 			{
 				"name" : "warp-setup.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/javascript",
-				"patcherrelativepath" : "./javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

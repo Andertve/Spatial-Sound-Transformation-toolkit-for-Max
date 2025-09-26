@@ -20,7 +20,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1207.0, 490.0, 85.0, 22.0 ],
-					"text" : "/Sub_ch_sel 4"
+					"text" : "/Sub_ch_sel 6"
 				}
 
 			}
@@ -81,11 +81,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-11",
-					"linecount" : 18,
+					"linecount" : 16,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 644.0, 113.0, 153.0, 248.0 ],
+					"patching_rect" : [ 644.0, 113.0, 161.0, 221.0 ],
 					"text" : "// Route Sub from W (omni  component )from Ambisonic signal, we assume sub bass is omnidirectional, which is true ..but not always. However it is nice trick to have a separate Sub output .\n\nIn this example we want to set the output of the Sub bass signal to a separate output channel  no 4 and use a list object to set the channel routing of the decoded signal to mc.dac~. "
 				}
 
@@ -165,7 +165,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 238.0, 621.0, 55.0, 22.0 ],
-					"text" : "1 3 2 5 6"
+					"text" : "1 3 2 4 5"
 				}
 
 			}
@@ -351,36 +351,36 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "SSTT-Decoder-Output.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
+				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-Sub.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
+				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-encode.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
+				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bsclarinetsAirsnd3.aif",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/media",
-				"patcherrelativepath" : "./media",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/media",
+				"patcherrelativepath" : "../media",
 				"type" : "AIFF",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spat5.gui.control.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/spat5/patchers",
-				"patcherrelativepath" : "../Max 9/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -403,7 +403,7 @@
 , 			{
 				"name" : "spat5.known.speakersetups.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/spat5/patchers",
-				"patcherrelativepath" : "../Max 9/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -429,15 +429,15 @@
 			}
 , 			{
 				"name" : "spat_decode_manager.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/javascript",
-				"patcherrelativepath" : "./javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sptt-hoa-encodeMain.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/javascript",
-				"patcherrelativepath" : "./javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

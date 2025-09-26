@@ -14,6 +14,18 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 177.0, 648.0, 55.0, 22.0 ],
+					"text" : "1 3 2 4 5"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-70",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -281,6 +293,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-13", 1 ],
 					"source" : [ "obj-68", 0 ]
 				}
@@ -335,17 +354,7 @@
 			"obj-2::obj-58" : [ "live.text[13]", "live.text[9]", 0 ],
 			"obj-2::obj-7" : [ "live.menu[5]", "live.menu[1]", 0 ],
 			"obj-2::obj-79" : [ "ShowCh[2]", "showCh", 0 ],
-			"obj-68" : [ "mc.vst~[1]", "mc.vst~[1]", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
+			"obj-68" : [ "vst~[24]", "vst~[24]", 0 ],
 			"parameter_overrides" : 			{
 				"obj-13::obj-67" : 				{
 					"parameter_longname" : "live.menu[39]"
@@ -366,27 +375,27 @@
 		"dependency_cache" : [ 			{
 				"name" : "Barislwav.wav",
 				"bootpath" : "~/Desktop/fscape-lectureRiga",
-				"patcherrelativepath" : "../../../Desktop/fscape-lectureRiga",
+				"patcherrelativepath" : "../../../../../Desktop/fscape-lectureRiga",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-Decoder-Output.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/modules",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-ReEncoder.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/modules",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-encode.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/modules",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
@@ -394,13 +403,13 @@
 , 			{
 				"name" : "_20250925.maxsnap",
 				"bootpath" : "~/Documents/Max 9/Snapshots",
-				"patcherrelativepath" : "../../Max 9/Snapshots",
+				"patcherrelativepath" : "../../../Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "reencode_builder.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -412,7 +421,7 @@
 , 			{
 				"name" : "spat5.gui.control.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../Max 9/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -435,7 +444,7 @@
 , 			{
 				"name" : "spat5.known.speakersetups.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../Max 9/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -473,14 +482,14 @@
 			}
 , 			{
 				"name" : "spat_decode_manager.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sptt-hoa-encodeMain.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1

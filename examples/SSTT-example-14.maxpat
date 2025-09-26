@@ -10,9 +10,33 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 218.0, 99.0, 1158.0, 700.0 ],
+		"rect" : [ 218.0, 99.0, 1163.0, 757.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 151.0, 674.0, 55.0, 22.0 ],
+					"text" : "1 3 2 4 5"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1059.0, 556.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
@@ -28,7 +52,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 65.0, 437.0, 154.0, 65.0 ],
+					"patching_rect" : [ 65.0, 416.0, 154.0, 65.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 389.0, 292.0, 154.0, 65.0 ],
 					"viewvisibility" : 1
@@ -75,7 +99,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 896.0, 458.0, 177.0, 22.0 ],
+					"patching_rect" : [ 1059.0, 587.0, 177.0, 22.0 ],
 					"text" : "/drywet 65, /Interp_Time 12000,"
 				}
 
@@ -87,7 +111,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 896.0, 504.0, 214.0, 22.0 ],
+					"patching_rect" : [ 1059.0, 616.0, 214.0, 22.0 ],
 					"text" : "spat5.osc.prepend /SSTT-example-14/"
 				}
 
@@ -99,7 +123,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 896.0, 541.0, 113.0, 22.0 ],
+					"patching_rect" : [ 1059.0, 646.0, 113.0, 22.0 ],
 					"text" : "param.osc @auto 1"
 				}
 
@@ -167,7 +191,7 @@
 					"originaltempo" : 120.0,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 75.0, -8.0, 166.0, 65.0 ],
+					"patching_rect" : [ 65.0, 10.0, 166.0, 65.0 ],
 					"pitchcorrection" : 0,
 					"quality" : "basic",
 					"saved_attribute_attributes" : 					{
@@ -221,7 +245,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 75.0, 71.0, 287.0, 108.0 ],
+					"patching_rect" : [ 65.0, 89.0, 287.0, 108.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -232,7 +256,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 65.0, 766.0, 54.0, 22.0 ],
+					"patching_rect" : [ 65.0, 689.0, 54.0, 22.0 ],
 					"text" : "mc.dac~"
 				}
 
@@ -253,13 +277,20 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 65.0, 572.0, 989.0, 170.0 ],
+					"patching_rect" : [ 65.0, 498.0, 989.0, 170.0 ],
 					"viewvisibility" : 1
 				}
 
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-10", 0 ]
@@ -307,6 +338,13 @@
 					"destination" : [ "obj-20", 0 ],
 					"order" : 0,
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
@@ -387,70 +425,70 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "Bari multi M8 pitched_01 (1).wav",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/media",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "BassClar.20_4.MEL_15.wav",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/media",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "EspressoHelling.wav",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/media",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-Decoder-Output.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/modules",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-Mixer.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/modules",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-Spectral-Interpolate.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/modules",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-encode.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/modules",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SpecInterpol.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/abstractions",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/abstractions",
 				"patcherrelativepath" : "../abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bsclarinetsAirsnd3.aif",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/media",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/media",
 				"patcherrelativepath" : "../media",
 				"type" : "AIFF",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mcDryWet-mix.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/abstractions",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/abstractions",
 				"patcherrelativepath" : "../abstractions",
 				"type" : "JSON",
 				"implicit" : 1
@@ -462,7 +500,7 @@
 , 			{
 				"name" : "spat5.gui.control.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../Max 9/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -485,7 +523,7 @@
 , 			{
 				"name" : "spat5.known.speakersetups.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../Max 9/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -527,21 +565,21 @@
 			}
 , 			{
 				"name" : "spat_decode_manager.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sptt-hoa-encodeMain.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sptt-spectral-interp_spat.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1

@@ -4,15 +4,27 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 8,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1199.0, 760.0 ],
+		"rect" : [ 139.0, 87.0, 1199.0, 760.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 126.0, 649.0, 55.0, 22.0 ],
+					"text" : "1 3 2 4 5"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"args" : [ "STTMix" ],
 					"bgmode" : 0,
@@ -73,13 +85,13 @@
 					"basictuning" : 440,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "/Users/anderstveit/Music/Music/Media.localized/Music/Unknown Artist/Unknown Album/bariAirHlbFrz.wav",
-								"filename" : "bariAirHlbFrz.wav",
+								"absolutepath" : "BassClar.20_4.MEL_15.wav",
+								"filename" : "BassClar.20_4.MEL_15.wav",
 								"filekind" : "audiofile",
-								"id" : "u080005769",
-								"loop" : 0,
+								"id" : "u732009114",
+								"loop" : 1,
 								"content_state" : 								{
-
+									"loop" : 1
 								}
 
 							}
@@ -244,6 +256,13 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
 			"obj-12::obj-36" : [ "RM_freq", "Frequency", 0 ],
@@ -277,7 +296,8 @@
 				"0" : 				{
 					"index" : 0,
 					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
 				}
 
 			}
@@ -287,7 +307,8 @@
 					"parameter_linknames" : 1,
 					"parameter_longname" : "RM_freq",
 					"parameter_osc_enabled" : 1,
-					"parameter_osc_name" : "RM_freq"
+					"parameter_osc_name" : "RM_freq",
+					"parameter_range" : [ 5.0, 1500.0 ]
 				}
 ,
 				"obj-19::obj-3" : 				{
@@ -303,6 +324,10 @@
 					"parameter_osc_enabled" : 1,
 					"parameter_osc_name" : "Crossover",
 					"parameter_shortname" : "Crossover"
+				}
+,
+				"obj-1::obj-103::obj-21" : 				{
+					"parameter_longname" : "live.menu"
 				}
 ,
 				"obj-1::obj-14" : 				{
@@ -337,58 +362,58 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "BassClar.20_4.MEL_15.wav",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/media",
+				"patcherrelativepath" : "../media",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "HOA-RingFx.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/abstractions",
-				"patcherrelativepath" : "./abstractions",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/abstractions",
+				"patcherrelativepath" : "../abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-Decoder-Output.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
+				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-Mixer.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
+				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-RingMod.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
+				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SSTT-encode.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
+				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "bariAirHlbFrz.wav",
-				"bootpath" : "~/Music/Music/Media.localized/Music/Unknown Artist/Unknown Album",
-				"patcherrelativepath" : "../../Music/Music/Media.localized/Music/Unknown Artist/Unknown Album",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "mcDryWet-mix.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit/abstractions",
-				"patcherrelativepath" : "./abstractions",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/abstractions",
+				"patcherrelativepath" : "../abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spat5.gui.control.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/spat5/patchers",
-				"patcherrelativepath" : "../Max 9/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -411,7 +436,7 @@
 , 			{
 				"name" : "spat5.known.speakersetups.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/spat5/patchers",
-				"patcherrelativepath" : "../Max 9/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -433,15 +458,15 @@
 			}
 , 			{
 				"name" : "spat_decode_manager.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sptt-hoa-encodeMain.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
