@@ -1,0 +1,134 @@
+{
+  "name": "Spatial Sound Transformation Toolkit",
+  "displayname": "SSTT",
+  "version": "0.1.0",
+  "author": "Anders Tveit",
+  "authors": [
+    "Anders Tveit"
+  ],
+  "description": "The Spatial Sound Transformation toolkit for Max is a collection of Max modules in the form of bpatchers built around IRCAM´s Spat5 library. It has been developed throughout my own artistic practice as well as through lectures and workshops I have given in the artistic and creative use of ambisonics over the past years.",
+  "tags": ["spatial", "sound", "ambisonics", "spat5", "max", "toolkit"],
+  "website": "https://github.com/",
+  "extends": "",
+  "extensible": 0,
+  "max_version_min": "9.0.0",
+  "max_version_max": "none",
+  "os": {
+    "macintosh": {
+      "min_version": "none",
+      "platform": ["x64"]
+    },
+    "windows": {
+      "min_version": "none",
+      "platform": ["x64"]
+    }
+  },
+  "package_extra": {
+    "copyright": "Copyright (c) 2025 Anders Tveit"
+  },
+  "filelist": {
+    "modules": [
+      "SSTT-AmbiCombiner.maxpat",
+      "SSTT-AmbiSplitter.maxpat",
+      "SSTT-DeCorr.maxpat",
+      "SSTT-Decoder-Output.maxpat",
+      "SSTT-Delay.maxpat",
+      "SSTT-Gran.maxpat",
+      "SSTT-HOA-Blur.maxpat",
+      "SSTT-HOA_Focus.maxpat",
+      "SSTT-MFCCmap.maxpat",
+      "SSTT-Mixer.maxpat",
+      "SSTT-Omni-Verb.maxpat",
+      "SSTT-ReEncoder.maxpat",
+      "SSTT-RingMod.maxpat",
+      "SSTT-Rotation.maxpat",
+      "SSTT-Spatial-waveshape.maxpat",
+      "SSTT-Spectral-Interpolate.maxpat",
+      "SSTT-SpectrumSplit~.maxpat",
+      "SSTT-Sub.maxpat",
+      "SSTT-VirtualSpeakers.maxpat",
+      "SSTT-encode.maxpat",
+      "SSTT-fbDel.maxpat",
+      "SSTT-record.maxpat",
+      "SSTT-warp.maxpat"
+    ],
+    "examples": [
+      "SSTT-example-1.maxpat",
+      "SSTT-example-2.maxpat",
+      "SSTT-example-3.maxpat",
+      "SSTT-example-4.maxpat",
+      "SSTT-example-5.maxpat",
+      "SSTT-example-6.maxpat",
+      "SSTT-example-7.maxpat",
+      "SSTT-example-8.maxpat",
+      "SSTT-example-9.maxpat",
+      "SSTT-example-10a.maxpat",
+      "SSTT-example-10b.maxpat",
+      "SSTT-example-11.maxpat",
+      "SSTT-example-11b.maxpat",
+      "SSTT-example-12.maxpat",
+      "SSTT-example-13.maxpat",
+      "SSTT-example-14.maxpat"
+    ],
+    "media": [
+      "Bari multi M8 pitched_01 (1).wav",
+      "BassClar.20_4.MEL_15.wav",
+      "EspressoHelling.wav",
+      "Klesbørste.wav",
+      "Meccano opptrekk 2 (nærmere) .aif",
+      "bsclarinetsAirsnd3.aif",
+      "hobbyvev.wav",
+      "preparert piano 01.wav"
+    ],
+    "snippets": [
+      "SSTT-Ambi-Combiner.maxsnip",
+      "SSTT-Ambi-Splitter.maxsnip",
+      "SSTT-AmbiRecord.maxsnip",
+      "SSTT-Blur.maxsnip",
+      "SSTT-Decoder_Out.maxsnip",
+      "SSTT-Decorr.maxsnip",
+      "SSTT-Delay.maxsnip",
+      "SSTT-Encoder.maxsnip",
+      "SSTT-FbDel_no-W.maxsnip",
+      "SSTT-Mix.maxsnip",
+      "SSTT-Omni-verb.maxsnip",
+      "SSTT-ReEncoder.maxsnip",
+      "SSTT-Spat-Rotation.maxsnip",
+      "SSTT-Spat-Warp.maxsnip",
+      "SSTT-SpatHOABlur.maxsnip",
+      "SSTT-Spat_gran.maxsnip",
+      "SSTT-SpatialWaveshapr.maxsnip",
+      "SSTT-SpatVirtualSpeakers.maxsnip",
+      "SSTT-Spectral-Interpol.maxsnip",
+      "SSTT-SpectrumSplitter.maxsnip",
+      "SSTT-Sph-RingMod.maxsnip",
+      "SSTT-Sub.maxsnip"
+    ],
+    "javascript": [
+      "SPTT-2-3DCombiner.js",
+      "SPTT-Ambi-Splitter-Combiner.js",
+      "SPTT_RouterManager.js",
+      "Specsplitter-setup.js",
+      "ambiW-setup.js",
+      "ambi_split_waveshape_router.js",
+      "connect3Dto2D.js",
+      "focus-setup.js",
+      "grain-setup.js",
+      "hoa_blur.js",
+      "matrixSpectral-setup.js",
+      "multifb.js",
+      "record-setup.js",
+      "reencode_builder.js",
+      "spat_decode_manager.js",
+      "sptt-hoa-encodeMain.js",
+      "sptt-hoa-rotate.js",
+      "sptt-spectral-interp_spat.js",
+      "virtual-speaker-setup.js",
+      "warp-setup.js"
+    ],
+    "extras": [
+      "SSTT-overview.maxpat",
+      "README.pdf"
+    ]
+  }
+}
