@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1371.0, 779.0 ],
+		"rect" : [ 35.0, 88.0, 1371.0, 779.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
@@ -25,7 +25,7 @@
 					"patching_rect" : [ 441.0, 145.0, 287.0, 28.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1016.964276015758514, 228.571426391601562, 143.0, 28.0 ],
+					"presentation_rect" : [ 881.0, 225.0, 143.0, 28.0 ],
 					"text" : "by Anders Tveit 2025\nNorwegian Academy of Music "
 				}
 
@@ -104,10 +104,10 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "SSTT-ExamplesOverview.maxpat",
-					"numinlets" : 0,
+					"name" : "SSTT-ModuleOverview.maxpat",
+					"numinlets" : 1,
 					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
+					"offset" : [ -1680.0, 0.0 ],
 					"patching_rect" : [ 10.0, 386.0, 1313.0, 724.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 264.0, 1361.0, 740.0 ],
@@ -217,7 +217,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 209.0, 149.0, 206.0, 50.0 ],
-					"text" : "A toolkit built around IRCAMs spat5 for exploration of sound transformation processes ."
+					"text" : "A toolkit built around IRCAMs spat5 for exploration spatial sound transformation processes ."
 				}
 
 			}
@@ -284,6 +284,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
+					"order" : 0,
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"order" : 1,
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -312,23 +321,19 @@
  ],
 		"parameters" : 		{
 			"obj-14" : [ "live.tab[13]", "live.tab[14]", 0 ],
-			"obj-2::obj-7" : [ "live.tab[48]", "live.tab[14]", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
 			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "SSTT-ExamplesOverview.maxpat",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
+				"name" : "ModuleOverview.png",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/extras",
+				"patcherrelativepath" : "./extras",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SSTT-ModuleOverview.maxpat",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
