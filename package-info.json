@@ -1,14 +1,14 @@
 {
   "name": "Spatial Sound Transformation Toolkit",
   "displayname": "SSTT",
-  "version": "0.1.0",
+  "version": "pre-release v0.1.0",
   "author": "Anders Tveit",
   "authors": [
     "Anders Tveit"
   ],
   "description": "The Spatial Sound Transformation toolkit for Max is a collection of Max modules in the form of bpatchers built around IRCAM´s Spat5 library. It has been developed throughout my own artistic practice as well as through lectures and workshops I have given in the artistic and creative use of ambisonics over the past years.",
   "tags": ["spatial", "sound", "ambisonics", "spat5", "max", "toolkit"],
-  "website": "https://github.com/",
+  "website": "https://github.com/Andertve/Spatial-Sound-Transformation-toolkit-for-Max",
   "extends": "",
   "extensible": 0,
   "max_version_min": "9.0.0",
