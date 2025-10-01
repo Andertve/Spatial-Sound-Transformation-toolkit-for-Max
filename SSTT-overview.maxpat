@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 88.0, 1371.0, 779.0 ],
+		"rect" : [ 192.0, 87.0, 1371.0, 779.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
@@ -321,6 +321,16 @@
  ],
 		"parameters" : 		{
 			"obj-14" : [ "live.tab[13]", "live.tab[14]", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
 			"inherited_shortname" : 1
 		}
 ,
@@ -333,8 +343,8 @@
 			}
 , 			{
 				"name" : "SSTT-ModuleOverview.maxpat",
-				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/extras",
+				"patcherrelativepath" : "./extras",
 				"type" : "JSON",
 				"implicit" : 1
 			}
