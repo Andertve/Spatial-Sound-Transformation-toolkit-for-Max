@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 8,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -14,6 +14,18 @@
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 601.0, 376.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-84",
 					"linecount" : 3,
@@ -35,7 +47,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 126.0, 179.0, 198.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 67.0, 20.0, 167.0, 17.0 ],
+					"presentation_rect" : [ 66.0, 19.0, 167.0, 17.0 ],
 					"text" : "mono/stereo input ->ambisonic out"
 				}
 
@@ -52,7 +64,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 377.0, 78.0, 40.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 21.0, 39.0, 45.0, 20.0 ],
+					"presentation_rect" : [ 20.0, 38.0, 45.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -80,7 +92,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 0.0, 93.0, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 107.0, 7.0, 80.0, 16.0 ],
+					"presentation_rect" : [ 106.0, 6.0, 80.0, 16.0 ],
 					"text" : "Encoder"
 				}
 
@@ -174,7 +186,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 568.0, 363.0, 145.0, 22.0 ],
+					"patching_rect" : [ 568.0, 417.0, 145.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "sptt-hoa-encodeMain.js",
 						"parameter_enable" : 0
@@ -188,14 +200,14 @@
 				"box" : 				{
 					"bubble" : 1,
 					"id" : "obj-8",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 510.0, 309.0, 150.0, 37.0 ],
+					"patching_rect" : [ 510.0, 309.0, 83.0, 51.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 77.0, 56.0, 122.0, 37.0 ],
+					"presentation_rect" : [ 76.0, 55.0, 122.0, 37.0 ],
 					"text" : "Define Ambisonic order: 1-9"
 				}
 
@@ -224,7 +236,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 441.0, 319.0, 53.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 24.0, 66.0, 41.0, 20.0 ],
+					"presentation_rect" : [ 23.0, 65.0, 41.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 5 ],
@@ -278,7 +290,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 245.0, 124.0, 30.0, 30.0 ]
 				}
 
@@ -320,7 +332,7 @@
 					"parameter_mappable" : 0,
 					"patching_rect" : [ 742.0, 382.0, 39.0, 13.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 244.0, 65.0, 26.0, 13.0 ],
+					"presentation_rect" : [ 243.0, 64.0, 26.0, 13.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "ShowCh[13]",
@@ -351,7 +363,7 @@
 					"parameter_mappable" : 0,
 					"patching_rect" : [ 738.0, 455.0, 39.0, 13.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 244.0, 80.0, 26.0, 13.0 ],
+					"presentation_rect" : [ 243.0, 79.0, 26.0, 13.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "ShowCh[14]",
@@ -383,7 +395,7 @@
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "spat5.hoa.encoder~ @order 1 @inputs 1 @dimension 3 @mc 1",
+					"text" : "spat5.hoa.encoder~ @order 8 @inputs 13 @dimension 3 @mc 1",
 					"varname" : "encoder_script"
 				}
 
@@ -418,9 +430,9 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 483.0, 402.111176, 196.121216000000004, 65.888824 ],
+					"patching_rect" : [ 366.0, 455.0, 196.121216000000004, 65.888824 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 1.0, 283.0, 102.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 283.0, 102.0 ],
 					"proportion" : 0.39,
 					"rounded" : 18
 				}
@@ -461,6 +473,13 @@
 					"destination" : [ "obj-4", 0 ],
 					"order" : 0,
 					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-101", 0 ],
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}

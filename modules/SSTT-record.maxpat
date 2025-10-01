@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 7,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -71,7 +71,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 550.0, 261.0, 100.0, 22.0 ],
+					"patching_rect" : [ 571.0, 260.5, 100.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "record-setup.js",
 						"parameter_enable" : 0
@@ -215,34 +215,9 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-121",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 289.0, 129.541691000000014, 90.0, 22.0 ],
-					"text" : "r to-thisPatcher"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-33",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 289.0, 161.541691000000014, 67.0, 22.0 ],
-					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
-					"text" : "thispatcher"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -348,11 +323,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-45",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "" ],
-					"patching_rect" : [ 96.0, 177.0, 213.0, 22.0 ],
+					"patching_rect" : [ 96.0, 177.0, 156.0, 35.0 ],
 					"presentation_linecount" : 2,
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
@@ -368,13 +344,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
 					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-33", 0 ],
-					"source" : [ "obj-121", 0 ]
 				}
 
 			}
@@ -450,44 +419,7 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-20" : [ "ShowCh[12]", "showCh", 0 ],
-			"obj-25" : [ "live.toggle[9]", "live.toggle", 0 ],
-			"obj-53" : [ "live.tab[8]", "live.tab[8]", 0 ],
-			"obj-79" : [ "ShowCh[11]", "showCh", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "record-setup.js",
-				"bootpath" : "~/Documents/Spatial-Transformation-toolkit",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "spat5.rec.svg",
-				"bootpath" : "~/Documents/Max 9/Packages/spat5/media/images",
-				"patcherrelativepath" : "../Max 9/Packages/spat5/media/images",
-				"type" : "svg",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "spat5.sfrecord~.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

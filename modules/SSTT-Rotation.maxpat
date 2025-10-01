@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 8,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -120,7 +120,7 @@
 					"presentation_rect" : [ 286.0, 62.0, 26.0, 13.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "ShowCh[6]",
+							"parameter_longname" : "ShowCh[3]",
 							"parameter_mmax" : 128.0,
 							"parameter_mmin" : 1.0,
 							"parameter_modmode" : 4,
@@ -151,7 +151,7 @@
 					"presentation_rect" : [ 286.0, 77.0, 26.0, 13.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "ShowCh[15]",
+							"parameter_longname" : "ShowCh[4]",
 							"parameter_mmax" : 128.0,
 							"parameter_mmin" : 1.0,
 							"parameter_modmode" : 4,
@@ -206,7 +206,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_longname" : "live.toggle[4]",
+							"parameter_longname" : "live.toggle[9]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.toggle",
@@ -233,7 +233,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_longname" : "live.toggle[3]",
+							"parameter_longname" : "live.toggle[6]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.toggle",
@@ -260,7 +260,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_longname" : "rot-yaw_onoff",
+							"parameter_longname" : "live.toggle[5]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_osc_enabled" : 1,
@@ -418,7 +418,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_longname" : "autorotate",
+							"parameter_longname" : "live.toggle[7]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_osc_enabled" : 1,
@@ -507,7 +507,7 @@
 						}
 ,
 						"valueof" : 						{
-							"parameter_longname" : "rot-roll",
+							"parameter_longname" : "live.dial[4]",
 							"parameter_mmax" : 360.0,
 							"parameter_mmin" : -360.0,
 							"parameter_modmode" : 0,
@@ -543,7 +543,7 @@
 ,
 						"valueof" : 						{
 							"parameter_linknames" : 1,
-							"parameter_longname" : "rot-pitch",
+							"parameter_longname" : "live.dial[3]",
 							"parameter_mmax" : 360.0,
 							"parameter_mmin" : -360.0,
 							"parameter_modmode" : 0,
@@ -579,7 +579,7 @@
 ,
 						"valueof" : 						{
 							"parameter_linknames" : 1,
-							"parameter_longname" : "rot-yaw",
+							"parameter_longname" : "live.dial[7]",
 							"parameter_mmax" : 360.0,
 							"parameter_mmin" : -360.0,
 							"parameter_modmode" : 0,
@@ -610,7 +610,7 @@
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "spat5.hoa.rotate~ @order 0 @dimension 3 @mc 1",
+					"text" : "spat5.hoa.rotate~ @order 5 @dimension 3 @mc 1",
 					"varname" : "rotate_script"
 				}
 
