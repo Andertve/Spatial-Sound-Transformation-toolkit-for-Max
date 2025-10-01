@@ -10,29 +10,17 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 124.0, 1254.0, 700.0 ],
+		"rect" : [ 34.0, 87.0, 1254.0, 700.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 172.0, 724.0, 55.0, 22.0 ],
-					"text" : "1 3 2 4 5"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-67",
-					"linecount" : 13,
+					"linecount" : 14,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 730.526341915130615, 333.0, 233.0, 181.0 ],
-					"text" : "An explanation: We are going into the Re-Encoder with our messed up ambisonic signal, we decode it internally to a t-format SAD ( a spherical t-design resembling coincendal multimicrophones),which have more than the ambisonic channels, then in order to encode it back we connect it to a mc.* 1 which does not do anything other than help with getting back into the patch, then its being encoded as virtual sources to ambisonic and we now have establish a proper ambisonic signal."
+					"patching_rect" : [ 730.526341915130615, 333.0, 233.0, 194.0 ],
+					"text" : "An explanation: We are going into the Re-Encoder with our messed up ambisonic signal, we decode it internally to a t-format SAD ( a spherical t-design resembling a huge range of coincendal multimicrophones),\nwhich have more than the ambisonic channels, then in order to encode it back we connect it to a mc.* 1 which does not do anything other than help with getting back into the patch, then its being encoded as multiple virtual sources to an optimal ambisonic encoder and we now have establish a proper ambisonic signal."
 				}
 
 			}
@@ -77,8 +65,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1082.0, 366.0, 149.0, 62.0 ],
-					"text" : "/waveshpr_gain 1, /waveshpr_drive 11, /spat_HOAblur 31.5, /drywet 85"
+					"patching_rect" : [ 1082.0, 366.0, 163.0, 62.0 ],
+					"text" : "/waveshpr_gain 0.75, /waveshpr_drive 11, /spat_HOAblur 10.5, /drywet 100"
 				}
 
 			}
@@ -98,7 +86,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 363.0, 233.0, 184.0, 75.0 ],
+					"patching_rect" : [ 390.0, 222.0, 184.0, 75.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -119,7 +107,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 390.0, 333.0, 191.0, 80.0 ],
+					"patching_rect" : [ 390.0, 322.0, 191.0, 80.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -186,12 +174,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-11",
-					"linecount" : 9,
+					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 596.0, 118.0, 152.0, 127.0 ],
-					"text" : "Since we are basically destroying the ambisonic  signal we can reEncode it gain so we are going back into ambisonic domain by going in to a intermediate format called T-format and then back again to B format /Ambisonic"
+					"patching_rect" : [ 596.0, 118.0, 157.0, 114.0 ],
+					"text" : "Since we are basically destroying the ambisonic  signal we can reEncode it back to ambisonic domain   by going via an intermediate format called T-format and then to B format /Ambisonic"
 				}
 
 			}
@@ -200,10 +188,10 @@
 					"basictuning" : 440,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "/Users/anderstveit/Desktop/fscape-lectureRiga/Barislwav.wav",
-								"filename" : "Barislwav.wav",
+								"absolutepath" : "EspressoHelling.wav",
+								"filename" : "EspressoHelling.wav",
 								"filekind" : "audiofile",
-								"id" : "u410005876",
+								"id" : "u706002730",
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1
@@ -397,13 +385,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-13", 1 ],
 					"source" : [ "obj-65", 0 ]
 				}
@@ -518,9 +499,9 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "Barislwav.wav",
-				"bootpath" : "~/Desktop/fscape-lectureRiga",
-				"patcherrelativepath" : "../../../../../Desktop/fscape-lectureRiga",
+				"name" : "EspressoHelling.wav",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}

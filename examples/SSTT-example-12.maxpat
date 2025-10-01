@@ -15,12 +15,12 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-5",
-					"maxclass" : "message",
-					"numinlets" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 208.0, 632.0, 55.0, 22.0 ],
-					"text" : "1 3 2 4 5"
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 919.0, 249.0, 58.0, 22.0 ],
+					"text" : "loadbang"
 				}
 
 			}
@@ -31,7 +31,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 919.0, 265.0, 67.0, 22.0 ],
+					"patching_rect" : [ 919.0, 279.0, 67.0, 22.0 ],
 					"text" : "/drywet 75,"
 				}
 
@@ -306,7 +306,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
+					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -364,6 +364,16 @@
 			"obj-3::obj-3" : [ "ambiorder", "ambiorder", 0 ],
 			"obj-3::obj-57" : [ "live.text[15]", "live.text[9]", 0 ],
 			"obj-3::obj-79" : [ "ShowCh[14]", "showCh", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
 			"inherited_shortname" : 1
 		}
 ,

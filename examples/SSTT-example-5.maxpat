@@ -14,18 +14,6 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 113.0, 646.0, 55.0, 22.0 ],
-					"text" : "1 3 2 4 5"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-7",
 					"linecount" : 2,
 					"maxclass" : "message",
@@ -312,13 +300,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-22", 1 ]
 				}
@@ -420,16 +401,6 @@
 			"obj-5::obj-91" : [ "rot-roll", "roll", 0 ],
 			"obj-5::obj-92" : [ "rot-pitch", "pitch", 0 ],
 			"obj-5::obj-93" : [ "rot-yaw", "yaw", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
 			"parameter_overrides" : 			{
 				"obj-1::obj-103::obj-21" : 				{
 					"parameter_longname" : "live.menu"

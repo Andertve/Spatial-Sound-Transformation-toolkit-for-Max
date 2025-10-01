@@ -14,13 +14,25 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 347.0, 621.0, 289.0, 60.0 ],
+					"text" : "with mc.dac you can route with a list object, so in this example the loudspeaker setup in the decoder a bit different ( center is ch.2) so we route accordinly+ the sub is dedicated to output 4"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1207.0, 490.0, 85.0, 22.0 ],
-					"text" : "/Sub_ch_sel 6"
+					"text" : "/Sub_ch_sel 4"
 				}
 
 			}
@@ -74,7 +86,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 823.0, 467.0, 152.0, 39.0 ],
-					"text" : "Select a 5.1 setup"
+					"text" : "Select a 7.1 setup"
 				}
 
 			}
@@ -85,7 +97,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 644.0, 113.0, 161.0, 221.0 ],
+					"patching_rect" : [ 644.0, 113.0, 162.0, 221.0 ],
 					"text" : "// Route Sub from W (omni  component )from Ambisonic signal, we assume sub bass is omnidirectional, which is true ..but not always. However it is nice trick to have a separate Sub output .\n\nIn this example we want to set the output of the Sub bass signal to a separate output channel  no 4 and use a list object to set the channel routing of the decoded signal to mc.dac~. "
 				}
 
@@ -164,8 +176,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 238.0, 621.0, 55.0, 22.0 ],
-					"text" : "1 3 2 4 5"
+					"patching_rect" : [ 238.0, 621.0, 75.0, 22.0 ],
+					"text" : "1 3 2 5 6 7 8"
 				}
 
 			}
@@ -336,6 +348,16 @@
 			"obj-2::obj-58" : [ "live.text[13]", "live.text[9]", 0 ],
 			"obj-2::obj-7" : [ "live.menu[5]", "live.menu[1]", 0 ],
 			"obj-2::obj-79" : [ "ShowCh[2]", "showCh", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
 			"parameter_overrides" : 			{
 				"obj-2::obj-103::obj-21" : 				{
 					"parameter_linknames" : 1,

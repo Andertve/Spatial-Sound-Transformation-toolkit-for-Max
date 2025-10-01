@@ -14,18 +14,6 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 195.0, 652.0, 55.0, 22.0 ],
-					"text" : "1 3 2 4 5"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-46",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -138,10 +126,10 @@
 					"basictuning" : 440,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "hobbyvev.wav",
-								"filename" : "hobbyvev.wav",
+								"absolutepath" : "Klesbørste.wav",
+								"filename" : "Klesbørste.wav",
 								"filekind" : "audiofile",
-								"id" : "u948005414",
+								"id" : "u098000917",
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1
@@ -314,13 +302,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-8", 1 ]
 				}
@@ -367,16 +348,6 @@
 			"obj-3::obj-35" : [ "ShowCh[18]", "showCh", 0 ],
 			"obj-3::obj-5" : [ "drywet", "Dry/Wet", 0 ],
 			"obj-3::obj-82" : [ "ShowChbox[2]", "showCh", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
 			"parameter_overrides" : 			{
 				"obj-16::obj-18" : 				{
 					"parameter_initial" : 73,
@@ -427,6 +398,13 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "Klesbørste.wav",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/media",
+				"patcherrelativepath" : "../media",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "SSTT-Decoder-Output.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
 				"patcherrelativepath" : "../modules",
@@ -459,13 +437,6 @@
 				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "hobbyvev.wav",
-				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/media",
-				"patcherrelativepath" : "../media",
-				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{

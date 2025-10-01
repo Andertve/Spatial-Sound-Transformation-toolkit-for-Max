@@ -14,18 +14,6 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 134.0, 751.0, 55.0, 22.0 ],
-					"text" : "1 3 2 4 5"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -378,13 +366,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-22", 1 ]
 				}
@@ -581,8 +562,20 @@
 					"parameter_longname" : "live.toggle[2]"
 				}
 ,
+				"obj-4::obj-15" : 				{
+					"parameter_longname" : "live.toggle[3]"
+				}
+,
+				"obj-4::obj-16" : 				{
+					"parameter_longname" : "live.toggle[4]"
+				}
+,
 				"obj-4::obj-2" : 				{
 					"parameter_longname" : "live.toggle[1]"
+				}
+,
+				"obj-4::obj-20" : 				{
+					"parameter_longname" : "ShowCh[6]"
 				}
 ,
 				"obj-4::obj-26" : 				{
@@ -770,6 +763,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "SSTT-example-3.maxsnap",
+				"bootpath" : "~/Documents/Max 9/Snapshots",
+				"patcherrelativepath" : "../../../Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "SSTT-record.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
 				"patcherrelativepath" : "../modules",
@@ -918,7 +918,205 @@
 				"implicit" : 1
 			}
  ],
-		"autosave" : 0
+		"autosave" : 0,
+		"snapshot" : 		{
+			"filetype" : "C74Snapshot",
+			"version" : 2,
+			"minorversion" : 0,
+			"name" : "snapshotlist",
+			"origin" : "jpatcher",
+			"type" : "list",
+			"subtype" : "Undefined",
+			"embed" : 1,
+			"snapshot" : 			{
+				"valuedictionary" : 				{
+					"parameter_values" : 					{
+						"DelayTime[2]" : 1555.0,
+						"Harmonics[2]" : 0.0,
+						"ShowCh[10]" : 5.0,
+						"ShowCh[11]" : 36.0,
+						"ShowCh[12]" : 5.0,
+						"ShowCh[13]" : 5.0,
+						"ShowCh[14]" : 36.0,
+						"ShowCh[15]" : 36.0,
+						"ShowCh[16]" : 5.0,
+						"ShowCh[17]" : 5.0,
+						"ShowCh[18]" : 5.0,
+						"ShowCh[19]" : 36.0,
+						"ShowCh[1]" : 5.0,
+						"ShowCh[2]" : 36.0,
+						"ShowCh[3]" : 36.0,
+						"ShowCh[4]" : 5.0,
+						"ShowCh[5]" : 5.0,
+						"ShowCh[6]" : 5.0,
+						"ShowCh[7]" : 36.0,
+						"ShowCh[8]" : 36.0,
+						"ShowCh[9]" : 36.0,
+						"ShowChbox[2]" : 36.0,
+						"live.dial" : 700.0,
+						"live.dial[17]" : 354.0,
+						"live.dial[18]" : 0.0,
+						"live.dial[1]" : 51.18110236220479,
+						"live.dial[2]" : 0.0,
+						"live.dial[3]" : 104.0,
+						"live.dial[4]" : 0.0,
+						"live.dial[5]" : 0.0,
+						"live.dial[6]" : 318.0,
+						"live.dial[7]" : 0.0,
+						"live.menu" : 0.0,
+						"live.menu[10]" : 0.0,
+						"live.menu[5]" : 4.0,
+						"live.menu[8]" : 3.0,
+						"live.menu[9]" : 0.0,
+						"live.numbox" : 354.0,
+						"live.numbox[10]" : 104.0,
+						"live.numbox[1]" : 0.0,
+						"live.numbox[20]" : 5.0,
+						"live.numbox[2]" : 45.0,
+						"live.numbox[3]" : 40.0,
+						"live.numbox[6]" : 24.0,
+						"live.numbox[7]" : 0.0,
+						"live.numbox[8]" : 40.0,
+						"live.numbox[9]" : 45.0,
+						"live.tab" : 1.0,
+						"live.tab[1]" : 1.0,
+						"live.tab[2]" : 1.0,
+						"live.tab[3]" : 1.0,
+						"live.tab[8]" : 1.0,
+						"live.text[10]" : 0.0,
+						"live.text[12]" : 0.0,
+						"live.text[13]" : 0.0,
+						"live.text[14]" : 0.0,
+						"live.text[15]" : 0.0,
+						"live.text[1]" : 0.0,
+						"live.text[9]" : 0.0,
+						"live.toggle" : 1.0,
+						"live.toggle[10]" : 0.0,
+						"live.toggle[1]" : 0.0,
+						"live.toggle[2]" : 0.0,
+						"live.toggle[3]" : 0.0,
+						"live.toggle[436]" : 0.0,
+						"live.toggle[4]" : 1.0,
+						"live.toggle[5]" : 0.0,
+						"live.toggle[6]" : 1.0,
+						"live.toggle[7]" : 1.0,
+						"live.toggle[8]" : 0.0,
+						"live.toggle[9]" : 0.0,
+						"mc.live.gain~[2]" : -70.0,
+						"mc.live.gain~[9]" : -70.0
+					}
+
+				}
+
+			}
+,
+			"snapshotlist" : 			{
+				"current_snapshot" : 0,
+				"entries" : [ 					{
+						"filetype" : "C74Snapshot",
+						"version" : 2,
+						"minorversion" : 0,
+						"name" : "SSTT-example-3",
+						"origin" : "SSTT-example-3",
+						"type" : "patcher",
+						"subtype" : "Undefined",
+						"embed" : 0,
+						"snapshot" : 						{
+							"valuedictionary" : 							{
+								"parameter_values" : 								{
+									"DelayTime[2]" : 1555.0,
+									"Harmonics[2]" : 0.0,
+									"ShowCh[10]" : 5.0,
+									"ShowCh[11]" : 36.0,
+									"ShowCh[12]" : 5.0,
+									"ShowCh[13]" : 5.0,
+									"ShowCh[14]" : 36.0,
+									"ShowCh[15]" : 36.0,
+									"ShowCh[16]" : 5.0,
+									"ShowCh[17]" : 5.0,
+									"ShowCh[18]" : 5.0,
+									"ShowCh[19]" : 36.0,
+									"ShowCh[1]" : 5.0,
+									"ShowCh[2]" : 36.0,
+									"ShowCh[3]" : 36.0,
+									"ShowCh[4]" : 5.0,
+									"ShowCh[5]" : 5.0,
+									"ShowCh[6]" : 5.0,
+									"ShowCh[7]" : 36.0,
+									"ShowCh[8]" : 36.0,
+									"ShowCh[9]" : 36.0,
+									"ShowChbox[2]" : 36.0,
+									"live.dial" : 700.0,
+									"live.dial[17]" : 354.0,
+									"live.dial[18]" : 0.0,
+									"live.dial[1]" : 51.18110236220479,
+									"live.dial[2]" : 0.0,
+									"live.dial[3]" : 104.0,
+									"live.dial[4]" : 0.0,
+									"live.dial[5]" : 0.0,
+									"live.dial[6]" : 318.0,
+									"live.dial[7]" : 0.0,
+									"live.menu" : 0.0,
+									"live.menu[10]" : 0.0,
+									"live.menu[5]" : 4.0,
+									"live.menu[8]" : 3.0,
+									"live.menu[9]" : 0.0,
+									"live.numbox" : 354.0,
+									"live.numbox[10]" : 104.0,
+									"live.numbox[1]" : 0.0,
+									"live.numbox[20]" : 5.0,
+									"live.numbox[2]" : 45.0,
+									"live.numbox[3]" : 40.0,
+									"live.numbox[6]" : 24.0,
+									"live.numbox[7]" : 0.0,
+									"live.numbox[8]" : 40.0,
+									"live.numbox[9]" : 45.0,
+									"live.tab" : 1.0,
+									"live.tab[1]" : 1.0,
+									"live.tab[2]" : 1.0,
+									"live.tab[3]" : 1.0,
+									"live.tab[8]" : 1.0,
+									"live.text[10]" : 0.0,
+									"live.text[12]" : 0.0,
+									"live.text[13]" : 0.0,
+									"live.text[14]" : 0.0,
+									"live.text[15]" : 0.0,
+									"live.text[1]" : 0.0,
+									"live.text[9]" : 0.0,
+									"live.toggle" : 1.0,
+									"live.toggle[10]" : 0.0,
+									"live.toggle[1]" : 0.0,
+									"live.toggle[2]" : 0.0,
+									"live.toggle[3]" : 0.0,
+									"live.toggle[436]" : 0.0,
+									"live.toggle[4]" : 1.0,
+									"live.toggle[5]" : 0.0,
+									"live.toggle[6]" : 1.0,
+									"live.toggle[7]" : 1.0,
+									"live.toggle[8]" : 0.0,
+									"live.toggle[9]" : 0.0,
+									"mc.live.gain~[2]" : -70.0,
+									"mc.live.gain~[9]" : -70.0
+								}
+
+							}
+
+						}
+,
+						"fileref" : 						{
+							"name" : "SSTT-example-3",
+							"filename" : "SSTT-example-3.maxsnap",
+							"filepath" : "~/Documents/Max 9/Snapshots",
+							"filepos" : -1,
+							"snapshotfileid" : "223ea733a9cad6753435c0d0e5848aab"
+						}
+
+					}
+ ]
+			}
+
+		}
+
 	}
 
 }

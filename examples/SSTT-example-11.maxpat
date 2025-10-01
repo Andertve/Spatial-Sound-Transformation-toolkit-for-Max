@@ -14,18 +14,6 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 221.0, 632.0, 55.0, 22.0 ],
-					"text" : "1 3 2 4 5"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"basictuning" : 440,
 					"data" : 					{
 						"clips" : [ 							{
@@ -94,12 +82,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-6",
-					"linecount" : 11,
+					"linecount" : 12,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 730.0, 163.0, 293.0, 154.0 ],
-					"text" : "A spectral filter reconstruction in multichannel fomat send to t-format input then encode from t-format to ambisonic where the multichannel inputs are being distributed onto a virtual sphere following the t-design\n\n\nThis is a technique you can use for a mc signals to ambisonic as long as your mc no.of channel correponds to the t-format and ambisonic order:\nThe t-format expetcs 4, 12 ,24, 36, 49, 64, 81,100 and 144 for ambisonic order 1 2 3 4 5 6 7 8 9"
+					"patching_rect" : [ 730.0, 163.0, 293.0, 167.0 ],
+					"text" : "A spectral filter reconstruction (over time ) in multichannel fomat send to t-format input then encode from t-format to ambisonic where the multichannel inputs are being distributed onto a virtual sphere following the t-design\n\n\nThis is a technique you can use for a mc signals to ambisonic as long as your mc no.of channel correponds to the t-format and ambisonic order:\nThe t-format expetcs 4, 12 ,24, 36, 49, 64, 81,100 and 144 for ambisonic order 1 2 3 4 5 6 7 8 9"
 				}
 
 			}
@@ -419,7 +407,7 @@
 									"numinlets" : 49,
 									"numoutlets" : 1,
 									"outlettype" : [ "multichannelsignal" ],
-									"patching_rect" : [ 38.0, 645.0, 908.0, 1957.0 ],
+									"patching_rect" : [ 38.0, 645.0, 946.0, 22.0 ],
 									"text" : "mc.pack~ 49",
 									"varname" : "spectr_pack"
 								}
@@ -434,7 +422,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 50,
 									"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "" ],
-									"patching_rect" : [ 37.0, 587.0, 913.0, 1783.0 ],
+									"patching_rect" : [ 37.0, 587.0, 950.0, 22.0 ],
 									"text" : "matrix~ 1 49 @ramp 1500",
 									"varname" : "spectr_matrix"
 								}
@@ -1512,13 +1500,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"source" : [ "obj-5", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-8", 1 ]
 				}
@@ -1567,16 +1548,6 @@
 			"obj-3::obj-3" : [ "ambiorder", "ambiorder", 0 ],
 			"obj-3::obj-57" : [ "live.text[15]", "live.text[9]", 0 ],
 			"obj-3::obj-79" : [ "ShowCh[14]", "showCh", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
 			"parameter_overrides" : 			{
 				"obj-13::obj-67" : 				{
 					"parameter_longname" : "live.menu[39]"

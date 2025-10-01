@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 124.0, 1254.0, 700.0 ],
+		"rect" : [ 125.0, 91.0, 1254.0, 700.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -27,13 +27,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-56",
-					"linecount" : 4,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 975.0, 347.0, 149.0, 62.0 ],
-					"text" : "/waveshpr_gain 1, /waveshpr_drive 11, /spat_HOAblur 31.5, /drywet 85"
+					"patching_rect" : [ 975.0, 347.0, 236.0, 35.0 ],
+					"text" : "/waveshpr_gain 0.75, /waveshpr_drive 11, /spat_HOAblur 10.5, /drywet 100"
 				}
 
 			}
@@ -172,10 +172,10 @@
 					"basictuning" : 440,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "/Users/anderstveit/Desktop/fscape-lectureRiga/Barislwav.wav",
-								"filename" : "Barislwav.wav",
+								"absolutepath" : "EspressoHelling.wav",
+								"filename" : "EspressoHelling.wav",
 								"filekind" : "audiofile",
-								"id" : "u410005876",
+								"id" : "u050010022",
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1
@@ -409,16 +409,6 @@
 			"obj-5::obj-23" : [ "spat_HOAblur", "blur", 0 ],
 			"obj-5::obj-4" : [ "ShowCh[6]", "showCh", 0 ],
 			"obj-5::obj-79" : [ "ShowCh[22]", "showCh", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
 			"parameter_overrides" : 			{
 				"obj-24::obj-7" : 				{
 					"parameter_linknames" : 1,
@@ -462,9 +452,9 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "Barislwav.wav",
-				"bootpath" : "~/Desktop/fscape-lectureRiga",
-				"patcherrelativepath" : "../../../../../Desktop/fscape-lectureRiga",
+				"name" : "EspressoHelling.wav",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}

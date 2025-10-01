@@ -10,21 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 118.0, 125.0, 1254.0, 700.0 ],
+		"rect" : [ 115.0, 110.0, 1108.0, 700.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 177.0, 648.0, 55.0, 22.0 ],
-					"text" : "1 3 2 4 5"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-70",
 					"maxclass" : "message",
@@ -53,7 +41,14 @@
 							"subtype" : "Undefined",
 							"embed" : 1,
 							"snapshot" : 							{
-
+								"pluginname" : "++phasor.vst",
+								"plugindisplayname" : "++phasor",
+								"pluginsavedname" : "",
+								"pluginsaveduniqueid" : 0,
+								"version" : 1,
+								"isbank" : 0,
+								"isbase64" : 1,
+								"blob" : "683.CMlaKA....fQPMDZ....ArhLvoG.IH......A........................................HvaVMjLgXl....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOvgVXy8lbVQkO7.UPRETSfjFY8HRLvfCLuUGch.hcgwVck0iHv3BLh7hO7.UPRETSfjFY8HRLzPCLuUGch.hcgwVck0iHv3BLh7hO7.UPRETSfjFY8HxL1.ya0QmHfXWXrUWY8HRLt.iHu3COPEjTA0DHoQVOhbiLv7VczIBH1EFa0UVOh.iKvHxK9vCTAIUPMARZj0iHhElajcWZjQGZh.hcgwVck0iHz3BLxTCLvjSL0TiL2LCMyfiHu3COPEjTA0DHoQVOhL1ar8lbh.hcgwVck0iHv3BLh7hO7.UPRETSfjFY8HhYkUFYhE1XqIBH1EFa0UVOhfCMtHCLzXCN4.iL0fyM3jSLh7hO7.UPRETSfjFY8HhYxUVb0UlaikmHfXWXrUWY8HxLy.iK1XCNvjCL3HCLyDiL0HxK9vCTAIUPMARZj0iHo41Ygklah.hcgwVck0iHw3hLvfSLxPSL1.yM1XiMvHiHu3COPEjTA0DHoQVOhvlYuQVYvQGZh.hcgwVck0iHw.CLt.iHu3COPEjTA0DHoQVOhvlYuMGZgAWYh.hcgwVck0iHx3BLh7hO7.UPRETSfjFY8HBal81bvUVYjIBH1EFa0UVOhbiK4bSMwHCMyTSNwLCL3TSNh7hO7.UPRETSfjFY8Hxa0Q2Ygklah.hcgwVck0iHv3hMvHSMv.SNwTSMxbyLzLCNh7hO7.UPRETSfjFY8HBck0Fbuw1aislHfXWXrUWY8HBLt.iHu3COu.GZgM2axYEU9.."
 							}
 ,
 							"snapshotlist" : 							{
@@ -62,21 +57,28 @@
 										"filetype" : "C74Snapshot",
 										"version" : 2,
 										"minorversion" : 0,
-										"name" : "",
-										"origin" : "",
-										"type" : "AudioUnit",
+										"name" : "airwindows BitGlitter",
+										"origin" : "++phasor.vst",
+										"type" : "VST",
 										"subtype" : "AudioEffect",
-										"embed" : 0,
+										"embed" : 1,
 										"snapshot" : 										{
-
+											"pluginname" : "++phasor.vst",
+											"plugindisplayname" : "++phasor",
+											"pluginsavedname" : "",
+											"pluginsaveduniqueid" : 0,
+											"version" : 1,
+											"isbank" : 0,
+											"isbase64" : 1,
+											"blob" : "683.CMlaKA....fQPMDZ....ArhLvoG.IH......A........................................HvaVMjLgXl....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOvgVXy8lbVQkO7.UPRETSfjFY8HRLvfCLuUGch.hcgwVck0iHv3BLh7hO7.UPRETSfjFY8HRLzPCLuUGch.hcgwVck0iHv3BLh7hO7.UPRETSfjFY8HxL1.ya0QmHfXWXrUWY8HRLt.iHu3COPEjTA0DHoQVOhbiLv7VczIBH1EFa0UVOh.iKvHxK9vCTAIUPMARZj0iHhElajcWZjQGZh.hcgwVck0iHz3BLxTCLvjSL0TiL2LCMyfiHu3COPEjTA0DHoQVOhL1ar8lbh.hcgwVck0iHv3BLh7hO7.UPRETSfjFY8HhYkUFYhE1XqIBH1EFa0UVOhfCMtHCLzXCN4.iL0fyM3jSLh7hO7.UPRETSfjFY8HhYxUVb0UlaikmHfXWXrUWY8HxLy.iK1XCNvjCL3HCLyDiL0HxK9vCTAIUPMARZj0iHo41Ygklah.hcgwVck0iHw3hLvfSLxPSL1.yM1XiMvHiHu3COPEjTA0DHoQVOhvlYuQVYvQGZh.hcgwVck0iHw.CLt.iHu3COPEjTA0DHoQVOhvlYuMGZgAWYh.hcgwVck0iHx3BLh7hO7.UPRETSfjFY8HBal81bvUVYjIBH1EFa0UVOhbiK4bSMwHCMyTSNwLCL3TSNh7hO7.UPRETSfjFY8Hxa0Q2Ygklah.hcgwVck0iHv3hMvHSMv.SNwTSMxbyLzLCNh7hO7.UPRETSfjFY8HBck0Fbuw1aislHfXWXrUWY8HBLt.iHu3COu.GZgM2axYEU9.."
 										}
 ,
 										"fileref" : 										{
-											"name" : "",
-											"filename" : "_20250925.maxsnap",
+											"name" : "airwindows BitGlitter",
+											"filename" : "airwindows BitGlitter.maxsnap",
 											"filepath" : "~/Documents/Max 9/Snapshots",
 											"filepos" : -1,
-											"snapshotfileid" : "dac10e7433540f62dfd269b99e3d99f1"
+											"snapshotfileid" : "371dd50abac10366b79dd8ca20f07da6"
 										}
 
 									}
@@ -117,7 +119,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 715.0, 68.0, 231.57895565032959, 208.0 ],
-					"text" : "In fact any non-linear sound transformation to ambisonic will trash the ambisonic signal ( but it still might sound great!) however you can use the Re-Encoder which will decode to a t-format then do your non-linear processing then go from t-format to ambisonic where it will be a proper ambisonic signal. \n\nIn this example we use an vst plugin set in multichannel mode so that it has the number of instances of that plugin according to the t-format channels, in this case 49.."
+					"text" : "In fact any non-linear sound transformation to ambisonic will trash the ambisonic signal ( but it still might sound great!) however you can use the Re-Encoder which will decode to a t-format then do your non-linear processing then go from t-format to ambisonic where it will be a proper ambisonic signal. \n\nIn this example we use an vst plugin (select you own) set in multichannel mode so that it has the number of instances of that plugin according to the t-format channels, in this case 49.."
 				}
 
 			}
@@ -147,10 +149,10 @@
 					"basictuning" : 440,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "/Users/anderstveit/Desktop/fscape-lectureRiga/Barislwav.wav",
-								"filename" : "Barislwav.wav",
+								"absolutepath" : "Klesbørste.wav",
+								"filename" : "Klesbørste.wav",
 								"filekind" : "audiofile",
-								"id" : "u410005876",
+								"id" : "u609004926",
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1
@@ -293,13 +295,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-13", 1 ],
 					"source" : [ "obj-68", 0 ]
 				}
@@ -354,7 +349,17 @@
 			"obj-2::obj-58" : [ "live.text[13]", "live.text[9]", 0 ],
 			"obj-2::obj-7" : [ "live.menu[5]", "live.menu[1]", 0 ],
 			"obj-2::obj-79" : [ "ShowCh[2]", "showCh", 0 ],
-			"obj-68" : [ "vst~[24]", "vst~[24]", 0 ],
+			"obj-68" : [ "vst~[29]", "vst~[29]", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
 			"parameter_overrides" : 			{
 				"obj-13::obj-67" : 				{
 					"parameter_longname" : "live.menu[39]"
@@ -373,9 +378,9 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "Barislwav.wav",
-				"bootpath" : "~/Desktop/fscape-lectureRiga",
-				"patcherrelativepath" : "../../../../../Desktop/fscape-lectureRiga",
+				"name" : "Klesbørste.wav",
+				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -401,7 +406,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "_20250925.maxsnap",
+				"name" : "airwindows BitGlitter.maxsnap",
 				"bootpath" : "~/Documents/Max 9/Snapshots",
 				"patcherrelativepath" : "../../../Snapshots",
 				"type" : "mx@s",

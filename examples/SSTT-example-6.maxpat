@@ -15,18 +15,6 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 122.0, 715.0, 55.0, 22.0 ],
-					"text" : "1 3 2 4 5"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -123,13 +111,14 @@
 				"box" : 				{
 					"bgcolor" : [ 0.650980392156863, 0.76078431372549, 0.584313725490196, 1.0 ],
 					"bubble_bgcolor" : [ 0.650980392156863, 0.76078431372549, 0.584313725490196, 1.0 ],
+					"fontface" : 0,
 					"id" : "obj-87",
-					"linecount" : 20,
+					"linecount" : 21,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 715.0, 105.0, 287.0, 275.0 ],
-					"text" : "a) split the source sound into frequency multichannel bands ( in this case a 50-band resonance filter with 50 channels. I.e. each channel, one freq band.\n\nb) The Frequency band and corresponding channel as virtual sources into an Ambisonic encoder , The virtual sources are distributed by Fibonacci spiral).  \n\nc) rotating and scaling the distribution of Virtual sources are done by mapping MFCC bands to scaling and rotation around the axis.\nThe MFCC analysis of the spectrum is output by onset detection.\n\nd) Using virtual beamforming we can focus  and direct the frequency-distributed sound in space\nwhere it is resonating differently depending on the direction of the beam"
+					"patching_rect" : [ 715.0, 105.0, 276.0, 288.0 ],
+					"text" : "a) split the source sound into frequency multichannel bands ( in this case a 50-band resonance filter with 50 channels. I.e. each channel, one freq band.\n\nb) The Frequency band and corresponding channel as virtual sources into an Ambisonic encoder , The virtual sources are distributed by Fibonacci spiral).  use Open too see the distribution\n\nc) rotating and scaling the distribution of Virtual sources are done by mapping MFCC bands to scaling and rotation around the axis.\nThe MFCC analysis of the spectrum is output by onset detection.\n\nd) Using virtual beamforming we can focus  and direct the frequency-distributed sound in space\nwhere it is resonating differently depending on the direction of the beam"
 				}
 
 			}
@@ -414,13 +403,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-24", 0 ]
 				}
@@ -538,19 +520,13 @@
 			"obj-5::obj-81" : [ "live.dial[7]", "el", 0 ],
 			"obj-5::obj-82" : [ "ShowChbox[3]", "showCh", 0 ],
 			"obj-5::obj-9" : [ "live.dial[13]", "selectivity", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
 			"parameter_overrides" : 			{
 				"obj-1::obj-103::obj-21" : 				{
 					"parameter_longname" : "live.menu"
+				}
+,
+				"obj-3::obj-5" : 				{
+					"parameter_initial" : 0.32
 				}
 ,
 				"obj-4::obj-3" : 				{

@@ -10,21 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 139.0, 87.0, 1199.0, 760.0 ],
+		"rect" : [ 200.0, 87.0, 1199.0, 760.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 126.0, 649.0, 55.0, 22.0 ],
-					"text" : "1 3 2 4 5"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"args" : [ "STTMix" ],
 					"bgmode" : 0,
@@ -71,12 +59,12 @@
 				"box" : 				{
 					"fontface" : 1,
 					"id" : "obj-14",
-					"linecount" : 6,
+					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 482.0, 156.0, 276.0, 87.0 ],
-					"text" : "// Lets keep things simple, what if we Ringmodulate (RM) the ambisonic signal? So that the spherical harmonics i.e directional components are being RM , \n\nI.e timbre and spatial properties tied"
+					"patching_rect" : [ 482.0, 156.0, 276.0, 127.0 ],
+					"text" : "// Lets keep things simple, what if we Ringmodulate (RM) the ambisonic signal? So that the spherical harmonics i.e directional components are being RM , the Spatial RM ringmodulates the Spherical compenets either in harmonic ratios or in an fm modulated ratio ( chaotic)\n\nI.e timbre and spatial properties are tied"
 				}
 
 			}
@@ -256,16 +244,10 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
  ],
 		"parameters" : 		{
 			"obj-12::obj-36" : [ "RM_freq", "Frequency", 0 ],
+			"obj-12::obj-5" : [ "live.tab[3]", "live.tab", 0 ],
 			"obj-19::obj-20" : [ "ShowCh[13]", "showCh", 0 ],
 			"obj-19::obj-3" : [ "ambiorder", "ambiorder", 0 ],
 			"obj-19::obj-57" : [ "live.text[15]", "live.text[9]", 0 ],
@@ -309,6 +291,10 @@
 					"parameter_osc_enabled" : 1,
 					"parameter_osc_name" : "RM_freq",
 					"parameter_range" : [ 5.0, 1500.0 ]
+				}
+,
+				"obj-12::obj-5" : 				{
+					"parameter_longname" : "live.tab[3]"
 				}
 ,
 				"obj-19::obj-3" : 				{

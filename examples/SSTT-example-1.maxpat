@@ -14,18 +14,6 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 71.0, 603.0, 55.0, 22.0 ],
-					"text" : "1 3 2 4 5"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bubble" : 1,
 					"bubble_bgcolor" : [ 0.733333333333333, 0.831372549019608, 0.694117647058824, 1.0 ],
 					"bubbleside" : 2,
@@ -317,13 +305,6 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
  ],
 		"parameters" : 		{
 			"obj-19::obj-20" : [ "ShowCh[13]", "showCh", 0 ],
@@ -349,6 +330,16 @@
 			"obj-1::obj-58" : [ "live.text[13]", "live.text[9]", 0 ],
 			"obj-1::obj-7" : [ "live.menu[5]", "live.menu[1]", 0 ],
 			"obj-1::obj-79" : [ "ShowCh[2]", "showCh", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
 			"parameter_overrides" : 			{
 				"obj-19::obj-3" : 				{
 					"parameter_longname" : "live.numbox[20]"

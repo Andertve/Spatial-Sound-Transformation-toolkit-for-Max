@@ -10,17 +10,41 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 151.0, 91.0, 1255.0, 775.0 ],
+		"rect" : [ 42.0, 91.0, 1231.0, 775.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-6",
+					"id" : "obj-7",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 122.0, 788.0, 55.0, 22.0 ],
-					"text" : "1 3 2 4 5"
+					"patching_rect" : [ 1116.0, 606.0, 230.0, 22.0 ],
+					"text" : "/rot-yaw_onoff 1, /autorotate 1, /drywet 60"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1120.0, 637.0, 207.0, 22.0 ],
+					"text" : "spat5.osc.prepend /SSTT-example-2/"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1120.0, 674.0, 122.0, 22.0 ],
+					"text" : "param.osc @auto 1"
 				}
 
 			}
@@ -36,8 +60,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 482.0, 525.999951362609863, 145.0, 51.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 27,
-					"presentation_rect" : [ 527.0, 536.0, 39.0, 372.0 ],
+					"presentation_linecount" : 19,
+					"presentation_rect" : [ 527.0, 536.0, 46.0, 265.0 ],
 					"text" : "Optional recording of the ambisonic output before decoding"
 				}
 
@@ -255,7 +279,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 468.749955296516418, 302.499971151351929, 327.0, 106.0 ],
+					"patching_rect" : [ 469.0, 302.0, 326.0, 100.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -276,7 +300,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 39.999996185302734, 247.499976396560669, 327.0, 106.0 ],
+					"patching_rect" : [ 40.0, 247.0, 325.0, 101.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -517,6 +541,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-4", 0 ]
 				}
@@ -531,8 +562,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"source" : [ "obj-6", 0 ]
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -595,7 +626,7 @@
 			"obj-5::obj-14" : [ "live.toggle[5]", "yawonoff", 0 ],
 			"obj-5::obj-15" : [ "live.toggle[6]", "live.toggle", 0 ],
 			"obj-5::obj-16" : [ "live.toggle[9]", "live.toggle", 0 ],
-			"obj-5::obj-2" : [ "live.toggle[8]", "counter-rot", 0 ],
+			"obj-5::obj-2" : [ "counter-rot", "counter-rot", 0 ],
 			"obj-5::obj-20" : [ "ShowCh[3]", "showCh", 0 ],
 			"obj-5::obj-26" : [ "live.toggle[7]", "autorotate", 0 ],
 			"obj-5::obj-38::obj-10" : [ "live.numbox[7]", "live.numbox", 0 ],
@@ -696,8 +727,20 @@
 					"parameter_longname" : "live.toggle[2]"
 				}
 ,
+				"obj-4::obj-15" : 				{
+					"parameter_longname" : "live.toggle[3]"
+				}
+,
+				"obj-4::obj-16" : 				{
+					"parameter_longname" : "live.toggle[4]"
+				}
+,
 				"obj-4::obj-2" : 				{
 					"parameter_longname" : "live.toggle[1]"
+				}
+,
+				"obj-4::obj-20" : 				{
+					"parameter_longname" : "ShowCh[6]"
 				}
 ,
 				"obj-4::obj-26" : 				{
@@ -733,7 +776,7 @@
 				}
 ,
 				"obj-5::obj-2" : 				{
-					"parameter_longname" : "live.toggle[8]"
+					"parameter_longname" : "counter-rot"
 				}
 ,
 				"obj-5::obj-20" : 				{
@@ -821,6 +864,20 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "SSTT-example-2.maxsnap",
+				"bootpath" : "~/Documents/Max 9/Snapshots",
+				"patcherrelativepath" : "../../../Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SSTT-example-2[1].maxsnap",
+				"bootpath" : "~/Documents/Max 9/Snapshots",
+				"patcherrelativepath" : "../../../Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "SSTT-record.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/Spatial-Transformation-toolkit/modules",
 				"patcherrelativepath" : "../modules",
@@ -901,6 +958,10 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "spat5.osc.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "spat5.osc.route.mxo",
 				"type" : "iLaX"
 			}
@@ -969,7 +1030,215 @@
 				"implicit" : 1
 			}
  ],
-		"autosave" : 0
+		"autosave" : 0,
+		"snapshot" : 		{
+			"filetype" : "C74Snapshot",
+			"version" : 2,
+			"minorversion" : 0,
+			"name" : "snapshotlist",
+			"origin" : "jpatcher",
+			"type" : "list",
+			"subtype" : "Undefined",
+			"embed" : 1,
+			"snapshot" : 			{
+				"valuedictionary" : 				{
+					"parameter_values" : 					{
+						"DelayTime[1]" : 1555.0,
+						"Harmonics[1]" : 0.0,
+						"ShowCh[11]" : 36.0,
+						"ShowCh[12]" : 5.0,
+						"ShowCh[13]" : 5.0,
+						"ShowCh[14]" : 36.0,
+						"ShowCh[18]" : 5.0,
+						"ShowCh[19]" : 36.0,
+						"ShowCh[1]" : 5.0,
+						"ShowCh[24]" : 5.0,
+						"ShowCh[25]" : 36.0,
+						"ShowCh[2]" : 36.0,
+						"ShowCh[3]" : 5.0,
+						"ShowCh[4]" : 36.0,
+						"ShowCh[5]" : 5.0,
+						"ShowCh[6]" : 5.0,
+						"ShowCh[7]" : 36.0,
+						"ShowChbox[2]" : 36.0,
+						"counter-rot" : 1.0,
+						"live.dial" : 700.0,
+						"live.dial[12]" : 0.0,
+						"live.dial[17]" : 0.0,
+						"live.dial[1]" : 0.0,
+						"live.dial[2]" : 0.0,
+						"live.dial[3]" : 0.0,
+						"live.dial[4]" : 0.0,
+						"live.dial[5]" : 0.0,
+						"live.dial[6]" : 212.0,
+						"live.dial[7]" : -212.0,
+						"live.menu" : 0.0,
+						"live.menu[10]" : 0.0,
+						"live.menu[5]" : 4.0,
+						"live.menu[8]" : 3.0,
+						"live.menu[9]" : 0.0,
+						"live.numbox" : 212.0,
+						"live.numbox[10]" : 212.0,
+						"live.numbox[1]" : 0.0,
+						"live.numbox[20]" : 5.0,
+						"live.numbox[2]" : 45.0,
+						"live.numbox[3]" : 40.0,
+						"live.numbox[6]" : 24.0,
+						"live.numbox[7]" : 45.0,
+						"live.numbox[8]" : 0.0,
+						"live.numbox[9]" : 40.0,
+						"live.tab" : 1.0,
+						"live.tab[1]" : 1.0,
+						"live.tab[2]" : 0.0,
+						"live.tab[3]" : 1.0,
+						"live.tab[8]" : 1.0,
+						"live.text[10]" : 0.0,
+						"live.text[12]" : 0.0,
+						"live.text[13]" : 0.0,
+						"live.text[14]" : 0.0,
+						"live.text[15]" : 0.0,
+						"live.text[1]" : 0.0,
+						"live.text[9]" : 0.0,
+						"live.toggle" : 1.0,
+						"live.toggle[19]" : 0.0,
+						"live.toggle[1]" : 0.0,
+						"live.toggle[2]" : 1.0,
+						"live.toggle[3]" : 0.0,
+						"live.toggle[436]" : 0.0,
+						"live.toggle[4]" : 0.0,
+						"live.toggle[5]" : 1.0,
+						"live.toggle[6]" : 0.0,
+						"live.toggle[7]" : 1.0,
+						"live.toggle[9]" : 0.0,
+						"mc.live.gain~[2]" : -70.0,
+						"mc.live.gain~[9]" : -70.0
+					}
+
+				}
+
+			}
+,
+			"snapshotlist" : 			{
+				"current_snapshot" : 0,
+				"entries" : [ 					{
+						"filetype" : "C74Snapshot",
+						"version" : 2,
+						"minorversion" : 0,
+						"name" : "SSTT-example-2",
+						"origin" : "SSTT-example-2",
+						"type" : "patcher",
+						"subtype" : "Undefined",
+						"embed" : 0,
+						"fileref" : 						{
+							"name" : "SSTT-example-2",
+							"filename" : "SSTT-example-2.maxsnap",
+							"filepath" : "~/Documents/Max 9/Snapshots",
+							"filepos" : -1,
+							"snapshotfileid" : "98e579098ae7a00571b0e5a43b653905"
+						}
+
+					}
+, 					{
+						"filetype" : "C74Snapshot",
+						"version" : 2,
+						"minorversion" : 0,
+						"name" : "SSTT-example-2[1]",
+						"origin" : "SSTT-example-2",
+						"type" : "patcher",
+						"subtype" : "Undefined",
+						"embed" : 1,
+						"fileref" : 						{
+							"name" : "SSTT-example-2[1]",
+							"filename" : "SSTT-example-2[1].maxsnap",
+							"filepath" : "~/Documents/Max 9/Snapshots",
+							"filepos" : -1,
+							"snapshotfileid" : "d00a727c38b81ff94c4beee1b02bd81a"
+						}
+,
+						"snapshot" : 						{
+							"valuedictionary" : 							{
+								"parameter_values" : 								{
+									"DelayTime[1]" : 1555.0,
+									"Harmonics[1]" : 0.0,
+									"ShowCh[11]" : 36.0,
+									"ShowCh[12]" : 5.0,
+									"ShowCh[13]" : 5.0,
+									"ShowCh[14]" : 36.0,
+									"ShowCh[18]" : 5.0,
+									"ShowCh[19]" : 36.0,
+									"ShowCh[1]" : 5.0,
+									"ShowCh[24]" : 5.0,
+									"ShowCh[25]" : 36.0,
+									"ShowCh[2]" : 36.0,
+									"ShowCh[3]" : 5.0,
+									"ShowCh[4]" : 36.0,
+									"ShowCh[5]" : 5.0,
+									"ShowCh[6]" : 5.0,
+									"ShowCh[7]" : 36.0,
+									"ShowChbox[2]" : 36.0,
+									"counter-rot" : 0.0,
+									"live.dial" : 700.0,
+									"live.dial[12]" : 0.0,
+									"live.dial[17]" : 0.0,
+									"live.dial[1]" : 0.0,
+									"live.dial[2]" : 0.0,
+									"live.dial[3]" : 0.0,
+									"live.dial[4]" : 0.0,
+									"live.dial[5]" : 0.0,
+									"live.dial[6]" : 205.0,
+									"live.dial[7]" : 205.0,
+									"live.menu" : 0.0,
+									"live.menu[10]" : 0.0,
+									"live.menu[5]" : 4.0,
+									"live.menu[8]" : 3.0,
+									"live.menu[9]" : 0.0,
+									"live.numbox" : 205.0,
+									"live.numbox[10]" : 205.0,
+									"live.numbox[1]" : 0.0,
+									"live.numbox[20]" : 5.0,
+									"live.numbox[2]" : 45.0,
+									"live.numbox[3]" : 40.0,
+									"live.numbox[6]" : 24.0,
+									"live.numbox[7]" : 45.0,
+									"live.numbox[8]" : 0.0,
+									"live.numbox[9]" : 40.0,
+									"live.tab" : 1.0,
+									"live.tab[1]" : 1.0,
+									"live.tab[2]" : 0.0,
+									"live.tab[3]" : 1.0,
+									"live.tab[8]" : 1.0,
+									"live.text[10]" : 0.0,
+									"live.text[12]" : 0.0,
+									"live.text[13]" : 0.0,
+									"live.text[14]" : 0.0,
+									"live.text[15]" : 0.0,
+									"live.text[1]" : 0.0,
+									"live.text[9]" : 0.0,
+									"live.toggle" : 1.0,
+									"live.toggle[19]" : 0.0,
+									"live.toggle[1]" : 0.0,
+									"live.toggle[2]" : 1.0,
+									"live.toggle[3]" : 0.0,
+									"live.toggle[436]" : 0.0,
+									"live.toggle[4]" : 0.0,
+									"live.toggle[5]" : 1.0,
+									"live.toggle[6]" : 0.0,
+									"live.toggle[7]" : 1.0,
+									"live.toggle[9]" : 0.0,
+									"mc.live.gain~[2]" : -70.0,
+									"mc.live.gain~[9]" : -70.0
+								}
+
+							}
+
+						}
+
+					}
+ ]
+			}
+
+		}
+
 	}
 
 }
