@@ -288,7 +288,7 @@
 					"patching_rect" : [ 357.377038955688477, 55.0, 312.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 337.0, 23.0, 312.0, 20.0 ],
-					"text" : "- A brief introduction and starting template"
+					"text" : "- A brief introduction and starting template, start here"
 				}
 
 			}
