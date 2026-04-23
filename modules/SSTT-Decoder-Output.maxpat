@@ -14,48 +14,81 @@
         "boxes": [
             {
                 "box": {
+                    "fontname": "Arial",
+                    "fontsize": 10.0,
+                    "id": "obj-83",
+                    "maxclass": "live.numbox",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "float" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 1020.0, 358.0, 45.0, 15.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 848.0, 80.0, 39.142858892679214, 15.0 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_initial": [ 23 ],
+                            "parameter_longname": "live.numbox[1]",
+                            "parameter_mmax": 256.0,
+                            "parameter_mmin": 1.0,
+                            "parameter_modmode": 0,
+                            "parameter_osc_enabled": 1,
+                            "parameter_osc_name": "numofspeak",
+                            "parameter_shortname": "live.numbox",
+                            "parameter_type": 1,
+                            "parameter_unitstyle": 0
+                        }
+                    },
+                    "varname": "live.numbox[1]"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-80",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1109.0, 397.0, 50.0, 22.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-61",
+                    "maxclass": "live.menu",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "float" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 937.0, 91.0, 100.0, 15.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 660.0, 80.0, 185.93102160096169, 15.0 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_enum": [ "2.0", "2.1", "LRS", "LCRS", "4.0", "4.1", "5.0", "5.0-TV", "5.1", "5.1-TV", "6.0", "6.1", "7.0", "8.0", "7.1", "9.0", "9.1", "22.", "22.2", "ircam studio 1", "ircam studio 1 low ring", "ircam studio 4", "ircam studio 4 low ring", "7.4.0", "cube", "notam sirius", "radio france studio 115", "zkm kubus", "france tv lab", "satosphere montreal", "hem cme studio bs04", "hem cme blackbox gd40", "hem cme blackbox gd40 subwoofers", "10.0-Auro3D", "10.1-Auro3D", "13.0-Auro3D", "13.1-Auro3D", "1.0", "equalarea-64", "lmta vilnius", "hfmt hamburg ELA1", "hfmt hamburg forum 63", "hfmt hamburg forum 55", "hfmt hamburg forum 25", "qmul performance lab", "qmul performance lab (middle)", "music unit 13.0", "music unit 13.1", "virginia tech cube 134.0", "virginia tech cube (layer 1)", "virginia tech cube (layer 2)", "virginia tech cube (layer 3)", "virginia tech cube (layer 4)", "virginia tech cube (layer 5)", "ircam vigie", "ircam vigie + LFE", "ircam vigie low ring", "udem gris dome", "c-lab taipei", "immersive audio lab haw hamburg", "dolby 5.1.2", "dolby 5.1.4", "dolby 7.1.2", "dolby 7.1.4", "dolby 9.1.2", "dolby 9.1.4", "dolby 9.1.6", "iem-cube", "ircam studio 1 + lower ring", "huddersfield town hall", "marseille-prism-lab", "cnsmdp-plateau-1", "hfu-klangdom", "espro-89", "espro-89-alt" ],
+                            "parameter_longname": "live.menu[4]",
+                            "parameter_mmax": 74,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "live.menu[4]",
+                            "parameter_type": 2
+                        }
+                    },
+                    "varname": "live.menu[4]"
+                }
+            },
+            {
+                "box": {
+                    "bgcolor": [ 0.40784313725490196, 0.38823529411764707, 0.38823529411764707, 0.44 ],
                     "fontsize": 9.5,
                     "id": "obj-54",
+                    "linecount": 3,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 645.0, 67.0, 121.0, 17.0 ],
+                    "patching_rect": [ 645.0, 67.0, 121.0, 38.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 640.0, 66.0, 141.0, 17.0 ],
-                    "text": "Pre-defined setups"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-70",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1003.0, 306.0, 54.0, 22.0 ],
-                    "text": "deferlow"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-51",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 3,
-                    "outlettype": [ "", "int", "int" ],
-                    "patching_rect": [ 994.0, 468.0, 48.0, 22.0 ],
-                    "text": "change"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-48",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 3,
-                    "outlettype": [ "", "int", "int" ],
-                    "patching_rect": [ 1006.0, 341.0, 48.0, 22.0 ],
-                    "text": "change"
+                    "presentation_rect": [ 660.0, 63.0, 226.20688104629517, 17.0 ],
+                    "text": "Pre-defined loudspeakersetups and no. of speakers"
                 }
             },
             {
@@ -544,7 +577,7 @@
                     "saved_object_attributes": {
                         "parameter_enable": 0
                     },
-                    "text": "spat5.hoa.binaural~ @order 5 @dimension 3D @mc 1",
+                    "text": "spat5.hoa.binaural~ @order 1 @dimension 3D @mc 1",
                     "varname": "spat_binaural"
                 }
             },
@@ -690,7 +723,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1079.0, 341.0, 165.0, 22.0 ],
+                    "patching_rect": [ 1099.0, 347.0, 165.0, 22.0 ],
                     "saved_object_attributes": {
                         "filename": "spat_decode_manager.js",
                         "parameter_enable": 0
@@ -708,7 +741,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 585.0, 92.0, 54.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 861.0, 108.0, 54.0, 48.0 ],
+                    "presentation_rect": [ 853.0, 110.0, 54.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_initial": [ 700 ],
@@ -747,7 +780,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 771.0, 115.0, 40.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 738.0, 137.0, 41.0, 20.0 ],
+                    "presentation_rect": [ 738.0, 140.0, 41.0, 20.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [ "val1", "val2" ],
@@ -783,28 +816,6 @@
                     "numoutlets": 0,
                     "patching_rect": [ 791.0, 217.0, 67.0, 22.0 ],
                     "text": "s preSetup"
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-103",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "spat5.known.speakersetups.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 791.0, 190.0, 150.0, 17.5 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 642.0, 79.0, 150.0, 17.5 ],
-                    "viewvisibility": 1
                 }
             },
             {
@@ -1175,7 +1186,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1057.0, 281.0, 73.0, 22.0 ],
+                    "patching_rect": [ 1001.0, 289.0, 73.0, 22.0 ],
                     "text": "r numSpeak"
                 }
             },
@@ -1189,7 +1200,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 798.0, 260.0, 58.0, 19.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 803.0, 73.0, 58.0, 19.0 ],
+                    "presentation_rect": [ 841.2161600589752, 6.0, 58.0, 19.0 ],
                     "text": "/preset/load"
                 }
             },
@@ -1203,7 +1214,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 871.0, 260.0, 67.0, 19.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 871.0, 73.0, 67.0, 19.0 ],
+                    "presentation_rect": [ 908.1080474853516, 6.0, 67.0, 19.0 ],
                     "text": "/preset/export"
                 }
             },
@@ -1225,7 +1236,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 933.0, 208.0, 290.5, 40.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 663.0, 27.0, 294.0, 37.0 ],
+                    "presentation_rect": [ 656.0, 27.0, 294.0, 37.0 ],
                     "viewvisibility": 1
                 }
             },
@@ -1233,13 +1244,14 @@
                 "box": {
                     "fontsize": 9.5,
                     "id": "obj-9",
+                    "linecount": 2,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 988.0, 255.0, 121.0, 17.0 ],
+                    "patching_rect": [ 988.0, 255.0, 121.0, 28.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 649.0, 7.0, 121.0, 17.0 ],
-                    "text": "Number of loudspeakers"
+                    "presentation_rect": [ 649.0, 7.0, 143.0, 17.0 ],
+                    "text": "Create number of loudspeakers"
                 }
             },
             {
@@ -1250,9 +1262,9 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 1078.0, 313.0, 43.0, 15.0 ],
+                    "patching_rect": [ 1099.0, 300.5, 43.0, 15.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 782.0, 8.0, 43.0, 15.0 ],
+                    "presentation_rect": [ 794.0, 8.0, 43.0, 15.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_initial": [ 23 ],
@@ -1313,7 +1325,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 449.0, 77.0, 100.0, 15.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 644.0, 104.0, 196.0, 15.0 ],
+                    "presentation_rect": [ 644.0, 109.0, 196.0, 15.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [ "direct-sampling", "mode-matching", "regularized-mode-matching", "energy-preserving", "all-rad", "allrad+", "mvlad" ],
@@ -1352,7 +1364,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 646.0, 120.0, 80.0, 15.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 644.0, 139.0, 80.0, 15.0 ],
+                    "presentation_rect": [ 644.0, 142.0, 80.0, 15.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [ "SN3D", "N3D", "FuMa", "SN2D", "N2D", "MaxN" ],
@@ -1389,7 +1401,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 309.0, 63.0, 117.0, 15.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 644.0, 122.0, 196.0, 15.0 ],
+                    "presentation_rect": [ 644.0, 125.0, 196.0, 15.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [ "None", "In-Phase", "Max-Re", "Max-Re for High Frequencies", "In-Phase (Low Freq) / Max-Re (High Freq)" ],
@@ -1512,7 +1524,7 @@
                     "saved_object_attributes": {
                         "parameter_enable": 0
                     },
-                    "text": "spat5.hoa.decoder~ @order 5 @outputs 1 @dimension 3D @mc 1 @initwith \"/method energypreserving, /type inphasemaxre\"",
+                    "text": "spat5.hoa.decoder~ @order 1 @outputs 11 @dimension 3D @mc 1 @initwith \"/method energypreserving, /type inphasemaxre\"",
                     "varname": "spat_decode_script"
                 }
             },
@@ -1550,12 +1562,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-104", 0 ],
-                    "source": [ "obj-103", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-31", 0 ],
                     "source": [ "obj-11", 0 ]
                 }
@@ -1580,7 +1586,15 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-38", 0 ],
+                    "destination": [ "obj-29", 0 ],
+                    "order": 0,
+                    "source": [ "obj-15", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-83", 0 ],
+                    "order": 1,
                     "source": [ "obj-15", 0 ]
                 }
             },
@@ -1696,6 +1710,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-80", 1 ],
+                    "source": [ "obj-29", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-2", 0 ],
                     "source": [ "obj-3", 0 ]
                 }
@@ -1738,15 +1758,15 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-29", 0 ],
-                    "order": 0,
+                    "destination": [ "obj-13", 1 ],
+                    "order": 1,
                     "source": [ "obj-38", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-70", 0 ],
-                    "order": 1,
+                    "destination": [ "obj-29", 0 ],
+                    "order": 0,
                     "source": [ "obj-38", 0 ]
                 }
             },
@@ -1800,12 +1820,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-13", 1 ],
-                    "source": [ "obj-48", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-46", 0 ],
                     "source": [ "obj-49", 0 ]
                 }
@@ -1855,6 +1869,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-104", 0 ],
+                    "source": [ "obj-61", 1 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-1", 0 ],
                     "source": [ "obj-65", 0 ]
                 }
@@ -1887,12 +1907,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-48", 0 ],
-                    "source": [ "obj-70", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-79", 0 ],
                     "source": [ "obj-74", 0 ]
                 }
@@ -1906,7 +1920,6 @@
         ],
         "parameters": {
             "obj-10": [ "Crossover", "Crossover", 0 ],
-            "obj-103::obj-21": [ "speakersetup", "live.menu", 0 ],
             "obj-12": [ "live.menu[8]", "live.menu[2]", 0 ],
             "obj-14": [ "mc.live.gain~[2]", "loudspeakers", 0 ],
             "obj-22::obj-102": [ "live.toggle[436]", "live.toggle", 0 ],
@@ -1927,19 +1940,16 @@
             "obj-46": [ "Sub_ch_vol", "Sub_ch_vol", 0 ],
             "obj-55": [ "live.toggle[19]", "live.toggle[2]", 0 ],
             "obj-58": [ "live.text[13]", "live.text[9]", 0 ],
+            "obj-61": [ "live.menu[4]", "live.menu[4]", 0 ],
             "obj-7": [ "live.menu[5]", "live.menu[1]", 0 ],
             "obj-79": [ "ShowCh[2]", "showCh", 0 ],
+            "obj-83": [ "live.numbox[1]", "live.numbox", 0 ],
             "parameterbanks": {
                 "0": {
                     "index": 0,
                     "name": "",
                     "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
                     "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
-            "parameter_overrides": {
-                "obj-103::obj-21": {
-                    "parameter_longname": "speakersetup"
                 }
             },
             "inherited_shortname": 1
