@@ -10,7 +10,7 @@ Spat5 and FluComa needs to be installed before the use of this toolkit.
 
 As the toolkit is doing automatic handling of ambisonic ordering, channels and connections it is paramount that the included javascripts, abstractions and all related patches in this package are in the specified folder and not moved across as this may break the functionality.  Furthermore there is a chance of bugs and weirdness, and I will update rather infrequently trying to adress any issues or request should there be.
 
-So in order this tookit to work do the following: 
+So in order for this tookit to work, do the following: 
 1) Install Spat5 from Ircam
 2) install FluComa from the Package manager in Max
 3) Add the Spatial-Sound-Transformation-toolkit in Packages in Max
