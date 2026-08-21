@@ -15,3 +15,4 @@ So in order for this tookit to work, do the following:
 2) install FluComa from the Package manager in Max
 3) Add the Spatial-Sound-Transformation-toolkit in Packages in Max
 4) In File preferences in Max add the folder to (+ for adding a folder) the search path
+5) Do check out the SSTT Example-1 and the SSTT module: SSTT-encode for information of use.
