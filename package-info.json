@@ -124,7 +124,9 @@
       "sptt-hoa-rotate.js",
       "sptt-spectral-interp_spat.js",
       "virtual-speaker-setup.js",
-      "warp-setup.js"
+      "warp-setup.js",
+      "osc-long.js",
+      "create-dsp"
     ],
     "extras": [
       "SSTT-overview.maxpat",
