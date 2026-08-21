@@ -4,13 +4,27 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 4,
+            "revision": 5,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 138.0, 167.0, 1444.0, 853.0 ],
+        "rect": [ 34.0, 96.0, 1444.0, 852.0 ],
         "boxes": [
+            {
+                "box": {
+                    "bubble": 1,
+                    "bubbleside": 3,
+                    "id": "obj-1",
+                    "linecount": 3,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 4.0, 489.0, 83.0, 51.0 ],
+                    "presentation_linecount": 2,
+                    "text": "Set a 100 to hear the effect."
+                }
+            },
             {
                 "box": {
                     "fontface": 3,
@@ -78,11 +92,11 @@
             },
             {
                 "box": {
-                    "clipheight": 21.0,
+                    "clipheight": 22.0,
                     "data": {
                         "clips": [
                             {
-                                "absolutepath": "/Users/anderstveit_1/Documents/NMH-undervisning/KPANV20/Samples/Tibetan_Crystal_Singing_Bowl-3_hits_using_rubber_mallet_1.wav",
+                                "absolutepath": "Tibetan_Crystal_Singing_Bowl-3_hits_using_rubber_mallet_1.wav",
                                 "filename": "Tibetan_Crystal_Singing_Bowl-3_hits_using_rubber_mallet_1.wav",
                                 "filekind": "audiofile",
                                 "id": "u392013480",
@@ -100,13 +114,24 @@
                                 }
                             },
                             {
+                                "absolutepath": "/Users/anderstveit_1/Documents/Mesmerism2-materiale/photophone/01-260507_1103.wav",
+                                "filename": "01-260507_1103.wav",
+                                "filekind": "audiofile",
+                                "id": "u387007939",
+                                "selection": [ 0.39285714285714285, 0.6533613445378151 ],
+                                "loop": 0,
+                                "content_state": {                                }
+                            },
+                            {
                                 "absolutepath": "/Users/anderstveit_1/Documents/movingMachines-somax/1-Ossa-metacarpi-Lene-Grenager-Mixed-handedness.wav",
                                 "filename": "1-Ossa-metacarpi-Lene-Grenager-Mixed-handedness.wav",
                                 "filekind": "audiofile",
                                 "id": "u598011208",
-                                "selection": [ 0.05925925925925926, 0.9407407407407408 ],
-                                "loop": 0,
-                                "content_state": {                                }
+                                "selection": [ 0.32592592592592595, 0.4962962962962963 ],
+                                "loop": 1,
+                                "content_state": {
+                                    "loop": 1
+                                }
                             }
                         ]
                     },
@@ -117,7 +142,7 @@
                     "numoutlets": 5,
                     "outlettype": [ "signal", "signal", "signal", "", "dictionary" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 92.0, 111.0, 190.0, 66.0 ],
+                    "patching_rect": [ 561.0, 46.0, 531.0, 92.0 ],
                     "quality": "basic",
                     "saved_attribute_attributes": {
                         "candicane2": {
@@ -214,7 +239,7 @@
                     "numoutlets": 1,
                     "offset": [ 0.0, 0.0 ],
                     "outlettype": [ "multichannelsignal" ],
-                    "patching_rect": [ 92.0, 194.0, 300.0, 108.0 ],
+                    "patching_rect": [ 86.0, 190.0, 300.0, 108.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 293.328125, 420.79296875, 287.0, 108.0 ],
                     "viewvisibility": 1
@@ -328,7 +353,6 @@
             "obj-14::obj-35": [ "ShowCh[16]", "showCh", 0 ],
             "obj-14::obj-82": [ "ShowChbox[3]", "showCh", 0 ],
             "obj-204::obj-10": [ "Crossover", "Crossover", 0 ],
-            "obj-204::obj-103::obj-21": [ "live.menu[1]", "live.menu", 0 ],
             "obj-204::obj-12": [ "live.menu[8]", "live.menu[2]", 0 ],
             "obj-204::obj-14": [ "mc.live.gain~[2]", "loudspeakers", 0 ],
             "obj-204::obj-22::obj-102": [ "live.toggle[436]", "live.toggle", 0 ],
@@ -349,8 +373,10 @@
             "obj-204::obj-46": [ "Sub_ch_vol", "Sub_ch_vol", 0 ],
             "obj-204::obj-55": [ "live.toggle[19]", "live.toggle[2]", 0 ],
             "obj-204::obj-58": [ "live.text[13]", "live.text[9]", 0 ],
+            "obj-204::obj-61": [ "live.menu[4]", "live.menu[4]", 0 ],
             "obj-204::obj-7": [ "live.menu[5]", "live.menu[1]", 0 ],
             "obj-204::obj-79": [ "ShowCh[2]", "showCh", 0 ],
+            "obj-204::obj-83": [ "live.numbox[1]", "live.numbox", 0 ],
             "obj-206::obj-16": [ "ambiorder[1]", "ambiorder", 0 ],
             "obj-206::obj-20": [ "ShowCh[13]", "showCh", 0 ],
             "obj-206::obj-3": [ "ambiorder", "ambiorder", 0 ],
@@ -376,9 +402,6 @@
                 },
                 "obj-14::obj-82": {
                     "parameter_longname": "ShowChbox[3]"
-                },
-                "obj-204::obj-103::obj-21": {
-                    "parameter_longname": "live.menu[1]"
                 }
             },
             "inherited_shortname": 1
