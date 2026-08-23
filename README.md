@@ -16,4 +16,4 @@ So in order for this tookit to work, do the following:
 4) In File preferences in Max add the folder to (+ for adding a folder) the search path
 5) Do check out the SSTT Example-1 and the SSTT module: SSTT-encode for information of use.
 
-* SSTT works in Max 8 with exeption of the param osc object introduced in Max 9, at some point I will switch over to v8 javascript from the js objects, then SSTT will stop working on Max 8.
+* SSTT works in Max 8 (possible in 7 as well, not tested) with the exception of the param osc objec. t introduced in Max 9. For the next update (v2),  I will switch over to the v8 JavaScript engine from the js objects; this not compatible with Max 7 and will probably use param family of objects more so prob a good idea to upgrade Max 9
