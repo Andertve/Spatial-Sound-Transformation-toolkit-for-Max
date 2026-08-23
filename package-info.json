@@ -1,7 +1,7 @@
 {
   "name": "Spatial Sound Transformation Toolkit",
   "displayname": "SSTT",
-  "version": "pre-release v0.1.0",
+  "version": "release v.1.0",
   "author": "Anders Tveit",
   "authors": [
     "Anders Tveit"
@@ -11,7 +11,7 @@
   "website": "https://github.com/Andertve/Spatial-Sound-Transformation-toolkit-for-Max",
   "extends": "",
   "extensible": 0,
-  "max_version_min": "9.0.0",
+  "max_version_min": "8.0.0",
   "max_version_max": "none",
   "os": {
     "macintosh": {
@@ -24,7 +24,7 @@
     }
   },
   "package_extra": {
-    "copyright": "Copyright (c) 2025 Anders Tveit"
+    "copyright": "-"
   },
   "filelist": {
     "modules": [
@@ -124,9 +124,7 @@
       "sptt-hoa-rotate.js",
       "sptt-spectral-interp_spat.js",
       "virtual-speaker-setup.js",
-      "warp-setup.js",
-      "osc-long.js",
-      "create-dsp"
+      "warp-setup.js"
     ],
     "extras": [
       "SSTT-overview.maxpat",
